@@ -1,0 +1,47 @@
+.navbar-container {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #6C6A6A;
+    justify-content: space-between;
+    position: fixed;
+    background-color: var(--background-default);
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar-container ul {
+    padding: 0 5vw;
+}
+
+.navbar-container ul li {
+    list-style: none;
+}
+
+.navbar-container ul li a {
+    text-decoration: none;
+    color: var(--pure-black);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+
+}
+
+.image-modifer-logo {
+    width: 177.75px;
+    height: 33px;
+}
+
+.navbar-part-1,
+.navbar-part-2 {
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    align-items: center;
+}
+
+.navbar-part-2 {
+    justify-content: flex-end;
+}

@@ -1,0 +1,142 @@
+@import url(../CSS/Public.css);
+
+
+.landing-page-01,
+.landing-page-02,
+.landing-page-03,
+.landing-page-04 {
+    height: 100vh;
+    border-bottom: 1px solid #000;
+    font-family: "Balthazar", serif;
+}
+
+.landing-page-01 {}
+
+.landing-page-02 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.landing-page-03 {}
+
+.landing-page-04 {}
+
+.container-home {
+    background-color: var(--background-default);
+    font-family: "Balthazar", serif;
+}
+
+.landingpage01-mod {
+    height: 100vh;
+}
+
+.landing-page-01 {
+    display: flex;
+    flex-direction: row;
+}
+
+.landing-page-01-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 17px;
+    padding: 0 100px;
+}
+
+.page-01-title-sub-button {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.page-01-title {
+    font-size: 32px;
+    /* color: var(--golden-title); */
+    font-weight: 500;
+    font-family: "Balthazar", serif;
+}
+
+.image-flower-home-mod {
+    width: 352px;
+}
+
+
+.page-01-sub-title {
+    width: 712px;
+    font-size: 22px;
+    /* color: var(--golden-title); */
+}
+
+.discover-more-button-mod {
+    width: 25%;
+}
+
+.landing-page-02-banner-01,
+.landing-page-02-banner-02 {
+    display: flex;
+    gap: 3rem;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.landing-page-02-part-01,
+.landing-page-02-part-02 {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-page-02-title {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.landing-page-02-sub-title {
+    font-size: 24px;
+}
+
+.landing-page-02-banner-02 {
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+.landing-page-02-explore-button {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.button-mod-for-landing {
+    align-items: center;
+    background-color: transparent;
+    color: var(--green-color);
+    cursor: pointer;
+    display: flex;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    font-style: italic;
+    /* padding: 1rem; */
+}
+
+.button-mod-for-landing:before {
+    background-color: var(--green-color);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all .42s cubic-bezier(.25, .8, .25, 1);
+    width: 0;
+}
+
+.button-mod-for-landing:hover:before {
+    background-color: var(--green-color);
+    width: 3.2rem;
+}
