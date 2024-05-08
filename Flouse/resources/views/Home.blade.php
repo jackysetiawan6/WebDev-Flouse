@@ -21,7 +21,7 @@
                     <img src="../image/FlowerHomePage.svg" alt="" class="image-flower-home-mod">
                     <div class="page-01-title-sub-button">
                         <div class="page-01-title">
-                            Hydrangea macrophylla
+                            Hydrangea Macrophylla
                         </div>
                         <div class="page-01-sub-title">
                             Hydrangeas area genus of woody, deciduous, perennial shrubs in the Hydrangeaceae family, with 48 types.They are native to
@@ -55,9 +55,30 @@
                 </div>
             </div>
             <div class="landing-page-03">
-                <div class="landing-page-02-title"></div>
-                <div class="landing-page-02-sub-title"></div>
-                <div class="landing-page-02-explore-button"></div>
+                <div class="image-and-banner-landing-page-03">
+                    <div class="image-slide-landing-page-03">
+                        <div class="slider-1 modder">
+                            <img src="../image/SampleBouq1.svg" alt="">
+                            <p>Mokara Orchid</p>
+                        </div>
+                        <div class="slider-2 modder">
+                            <img src="../image/SampleBouq2.svg" alt="">
+                            <p>Rose</p>
+                        </div>
+                        <div class="slider-3 modder">
+                            <img src="../image/SampleBouq3.svg" alt="">
+                            <p>Ranunculus</p>
+                        </div>
+                    </div>
+                    <div class="landing-page-03-banner-01">
+                        <div class="landing-page-03-title">Bouquet</div>
+                        <div class="landing-page-03-sub-title">Breathtaking blooms, thoughtfully arranged to express emotions beautifully. A timeless
+                            gift,
+                            captivating hearts with vibrant colors and delicate charm</div>
+                        <div class="landing-page-02-explore-button"><button class="button-mod-for-landing">Explore our latest</button></div>
+                    </div>
+                </div>
+
             </div>
             <div class="landing-page-04">
 
