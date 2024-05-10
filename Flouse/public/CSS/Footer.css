@@ -1,0 +1,112 @@
+.footer-title-and-input {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.footer-title-and-input {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--footer-green-color);
+    justify-content: center;
+    align-items: center;
+    height: 261px;
+}
+
+.title-for-footer {
+    font-size: 34px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.footer-title-01 {
+    font-size: 32px;
+    font-weight: 400;
+
+}
+
+.input-form input {
+    width: 781px;
+    height: 69.69px;
+    border-radius: 3px;
+    border: 1px solid #000;
+}
+
+.footer-last-place,
+.line-for-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--footer-green-dark-color);
+}
+
+
+hr {
+    border: 1px solid #292929;
+}
+
+.footer-information {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-last-place {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 70px;
+}
+
+.footer-information ul {
+    list-style: none;
+    gap: 21px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-information ul li a {
+    text-decoration: none;
+    color: var(--pure-black);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    font-size: 24px;
+    gap: 5px;
+}
+
+.get-in-touch-footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+}
+
+.payment-methods-footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    width: 200px;
+}
+
+.payment-methods-footer ul li img {
+    width: 50px;
+    height: 50px;
+}
+
+.line-for-footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px 70px;
+}
+
+.line-for-footer p {
+    font-size: 21px;
+    font-weight: 200;
+    font-style: italic;
+    padding: 10px 0;
+    text-align: center;
+}
