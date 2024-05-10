@@ -10,3 +10,7 @@ Route::get('/', function () {
 Route::get('/navbar', function () {
     return view('Navbar');
 });
+
+Route::get('/login', function () {
+    return view('Login');
+});
