@@ -69,6 +69,12 @@
                             <img src="../image/SampleBouq3.svg" alt="">
                             <p>Ranunculus</p>
                         </div>
+                        <div class="icon-page-03">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 28 28">
+                                <path fill="currentColor"
+                                    d="M14.22 8.97a.75.75 0 0 0 0 1.06l3.22 3.22H8.75a.75.75 0 0 0 0 1.5h8.69l-3.22 3.22a.75.75 0 1 0 1.06 1.06l4.5-4.5a.75.75 0 0 0 0-1.06l-4.5-4.5a.75.75 0 0 0-1.06 0M14 2C7.373 2 2 7.373 2 14s5.373 12 12 12s12-5.373 12-12S20.627 2 14 2M3.5 14C3.5 8.201 8.201 3.5 14 3.5S24.5 8.201 24.5 14S19.799 24.5 14 24.5S3.5 19.799 3.5 14" />
+                            </svg>
+                        </div>
                     </div>
                     <div class="landing-page-03-banner-01">
                         <div class="landing-page-03-title">Bouquet</div>
@@ -78,13 +84,44 @@
                         <div class="landing-page-02-explore-button"><button class="button-mod-for-landing">Explore our latest</button></div>
                     </div>
                 </div>
-
+                <div class="landing-page-03-banner-02">
+                    <div class="landing-page-03-title">Flower Boards</div>
+                    <div class="landing-page-03-sub-title-02">Experience elegance in every petal with our stunning flower boards. Each one
+                        meticulously designed to add a touch of sophistication to any occasion</div>
+                    <div>
+                    </div>
+                    <div class="image-still-landing-page-03">
+                        <img src="../image/SampleBoard02.svg" alt="">
+                        <img src="../image/SampleBoard01.svg" alt="">
+                    </div>
+                </div>
             </div>
             <div class="landing-page-04">
+                <div class="landing-page-04-part-01">
+                    <div class="landing-page-04-banner-01">
+                        <div class="landing-page-04-title">Artificial Floral Elegance </div>
+                        <div class="landing-page-04-sub-title">Experience timeless beauty with our Artificial Floral Elegance collection. Meticulously
+                            crafted, each arrangement exudes grace and charm, elevating any space with its unparalleled allure</div>
+                        <div class="landing-page-02-explore-button"><button class="button-mod-for-landing">Explore our latest</button></div>
+                    </div>
+                    <div class="landing-page-04-banner-02">
+                        <img src="../image/SampleArtificial02.svg" alt="">
+                    </div>
+                </div>
+                <div class="landing-page-04-part-02">
+                    <div class="landing-page-04-banner-02">
+                        <div class="landing-page-04-title">Nature Flower</div>
+                        <div class="landing-page-04-sub-title">Discover the splendor of nature's blooms with our collection. Each flower embodies the
+                            beauty and wonder of the natural world, bringing joy to any space</div>
+                        <div class="landing-page-02-explore-button-right"><button class="button-mod-for-landing">Explore our latest</button></div>
+                    </div>
+                    <div class="landing-page-04-banner-02">
+                        <img src="../image/SampleArtificial01.svg" alt="">
+                    </div>
+                </div>
 
             </div>
-        </div>
-        <footer></footer>
+            <footer></footer>
     </body>
 
 </html>
