@@ -15,7 +15,7 @@
             <h1 class="sign-in-text">Sign In</h1>
             <!-- <h2 class="email-text">Email</h2> -->
             <div class="email">
-                <input required="" type="text" name="text" autocomplete="off" class="input-email">
+                <input required="" type="text" name="text" class="input-email">
                 <label class="email-label">Email</label>
             </div>
             <div class="continue">
