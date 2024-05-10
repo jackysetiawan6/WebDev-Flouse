@@ -12,5 +12,9 @@ Route::get('/navbar', function () {
 });
 
 Route::get('/login', function () {
-    return view('Login');
+    return view('Auth/LoginEmail');
+});
+
+Route::get('/login/password', function () {
+    return view('Auth/LoginPassword');
 });

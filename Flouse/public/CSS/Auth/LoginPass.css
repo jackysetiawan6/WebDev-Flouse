@@ -1,0 +1,40 @@
+.container {
+    padding: 50px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.input-text p {
+    width: 90%;
+    overflow-x: scroll;
+}
+
+.input-text p::-webkit-scrollbar {
+    display: none;
+}
+
+.linked-text {
+    font-size: 20px;
+}
+
+.text-under {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.remember-me {
+    display: flex;
+    gap: 5px;
+}
+
+.linked-text.forgot {
+    font-size: 16px;
+}
