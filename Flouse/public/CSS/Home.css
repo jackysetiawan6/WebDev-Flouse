@@ -85,6 +85,46 @@
     width: 25%;
 }
 
+.discover-button {
+    font-size: 21px;
+    color: #7E7E7E;
+    font-family: "Balthazar", serif;;
+    /* font-weight: 800; */
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    /* text-transform: uppercase; */
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.discover-button:focus,
+.discover-button:hover {
+    color: black;
+}
+
+.discover-button:focus:after,
+.discover-button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.discover-button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
 .landing-page-02-banner-01,
 .landing-page-02-banner-02 {
     display: flex;
@@ -150,7 +190,8 @@
     /* padding: 1rem; */
 }
 
-.button-mod-for-landing:before {
+.button-mod-for-landing.right:before,
+.button-mod-for-landing.left:after {
     background-color: var(--green-color);
     content: "";
     display: inline-block;
@@ -160,7 +201,20 @@
     width: 0;
 }
 
-.button-mod-for-landing:hover:before {
+.button-mod-for-landing.left:after {
+    margin-left: 10px;
+}
+
+.button-mod-for-landing.right:before {
+    margin-right: 10px;
+}
+
+.button-mod-for-landing.right:hover:before {
+    background-color: var(--green-color);
+    width: 3.2rem;
+}
+
+.button-mod-for-landing.left:hover:after {
     background-color: var(--green-color);
     width: 3.2rem;
 }

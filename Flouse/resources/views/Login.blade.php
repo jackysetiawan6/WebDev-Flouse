@@ -12,11 +12,12 @@
     <div class="container">
         <img src="../Image/FlouseText.svg" alt="logo" class="image-modifier-logo">
         <div class="form">
-            <h1 class="sign-in-text">Sign In</h1>
-            <!-- <h2 class="email-text">Email</h2> -->
-            <div class="email">
-                <input required="" type="text" name="text" class="input-email">
-                <label class="email-label">Email</label>
+            <div class="main-form">
+                <h1 class="sign-in-text">Sign In</h1>
+                <div class="email">
+                    <input required="" type="text" name="text" class="input-email">
+                    <label class="email-label">Email</label>
+                </div>
             </div>
             <div class="continue">
                 <button class="continue-button">Continue</button>

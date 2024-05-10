@@ -20,9 +20,14 @@
     height: 60px;
 }
 
+.main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
 .sign-in-text {
     font-weight: 300;
-    gap: 0;
 }
 
 .email {
@@ -33,7 +38,7 @@
     border: solid 2px #D0D0D0;
     border-radius: 1rem;
     background: none;
-    width: 35vw;
+    width: 37.5vw;
     padding: 1rem;
     font-size: 1.2rem;
     color: black;
@@ -63,6 +68,7 @@
     padding: 0 .2em;
     color: #73A16A;
     font-size: 1.4rem;
+    top: 0;
 }
 
 .continue {
@@ -76,7 +82,7 @@
     background-color: #73A16A;
     font-size: 1.5rem;
     color: #F8F9F1;
-    padding: 8px 65px;
+    padding: 8px 4vw;
     border-radius: 10px;
     cursor: pointer;
     transition: all ease-in-out 0.3s;

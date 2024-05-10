@@ -27,8 +27,8 @@
                             Hydrangeas area genus of woody, deciduous, perennial shrubs in the Hydrangeaceae family, with 48 types.They are native to
                             Japan, China, Korea, and Southeast Asia.
                         </div>
-                        <div class="discover-more-button">
-                            <img src="../image/discovermore.svg" alt="" class="discover-more-button-mod">
+                        <div class="discover-more">
+                        <button class="discover-button">Discover More</button>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                         <div class="landing-page-02-title">House Plant / Verdent Villa</div>
                         <div class="landing-page-02-sub-title">Step into Verdent Villa, where lush houseplants transform every room into a green
                             oasis. From cascading vines to aromatic herbs, our sanctuary brings nature indoors for a tranquil living experience.</div>
-                        <div class="landing-page-02-explore-button-right"><button class="button-mod-for-landing">Explore our latest</button></div>
+                        <div class="landing-page-02-explore-button-right"><button class="button-mod-for-landing right">Explore our latest</button></div>
                     </div>
                 </div>
                 <div class="landing-page-02-banner-02">
@@ -50,7 +50,7 @@
                             Flora Concierge</div>
                         <div class="landing-page-02-sub-title">Introducing Plants Care: Your Botanical Butler Service. Let us tend to your plants,
                             ensuring they thrive and flourish in your home or office</div>
-                        <div class="landing-page-02-explore-button"><button class="button-mod-for-landing">Explore our latest</button></div>
+                        <div class="landing-page-02-explore-button"><button class="button-mod-for-landing left">Explore our latest</button></div>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                         <div class="landing-page-03-sub-title">Breathtaking blooms, thoughtfully arranged to express emotions beautifully. A timeless
                             gift,
                             captivating hearts with vibrant colors and delicate charm</div>
-                        <div class="landing-page-02-explore-button"><button class="button-mod-for-landing">Explore our latest</button></div>
+                        <div class="landing-page-02-explore-button"><button class="button-mod-for-landing left">Explore our latest</button></div>
                     </div>
                 </div>
                 <div class="landing-page-03-banner-02">
@@ -102,7 +102,7 @@
                         <div class="landing-page-04-title">Artificial Floral Elegance </div>
                         <div class="landing-page-04-sub-title">Experience timeless beauty with our Artificial Floral Elegance collection. Meticulously
                             crafted, each arrangement exudes grace and charm, elevating any space with its unparalleled allure</div>
-                        <div class="landing-page-02-explore-button"><button class="button-mod-for-landing">Explore our latest</button></div>
+                        <div class="landing-page-02-explore-button"><button class="button-mod-for-landing left">Explore our latest</button></div>
                     </div>
                     <div class="landing-page-04-banner-02">
                         <img src="../image/SampleArtificial02.svg" alt="">
@@ -113,7 +113,7 @@
                         <div class="landing-page-04-title">Nature Flower</div>
                         <div class="landing-page-04-sub-title">Discover the splendor of nature's blooms with our collection. Each flower embodies the
                             beauty and wonder of the natural world, bringing joy to any space</div>
-                        <div class="landing-page-02-explore-button-right"><button class="button-mod-for-landing">Explore our latest</button></div>
+                        <div class="landing-page-02-explore-button-right"><button class="button-mod-for-landing right">Explore our latest</button></div>
                     </div>
                     <div class="landing-page-04-banner-02">
                         <img src="../image/SampleArtificial01.svg" alt="">
