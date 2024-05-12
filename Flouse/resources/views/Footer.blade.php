@@ -6,7 +6,7 @@
             Get our latest flora news
         </p>
         <div class="input-form">
-            <input type="text">
+            <input type="text" placeholder="Email">
             <button>Subscribe</button>
         </div>
     </div>
