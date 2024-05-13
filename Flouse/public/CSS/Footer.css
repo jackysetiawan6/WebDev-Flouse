@@ -1,8 +1,3 @@
-footer {
-    height: fit-content;
-    width: 100%;
-}
-
 .footer-title-and-input {
     display: flex;
     flex-direction: column;
@@ -30,7 +25,6 @@ footer {
 }
 
 .input-form {
-    font-family: "Raleway", sans-serif;
     gap: 0;
     display: flex;
 

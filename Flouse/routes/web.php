@@ -10,6 +10,24 @@ Route::get('/profile', function () {
     return view('Profile');
 });
 
+<<<<<<< HEAD
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/transaction', function () {
+    return view('transactions');
+});
+
+Route::get('/address', function () {
+    return view('address');
+});
+
+Route::get('/payment', function () {
+    return view('payment');
+});
+=======
+>>>>>>> b13c1f37496252341a58d24239e35763e387a8b5
 Route::get('/navbar', function () {
     return view('Navbar');
 });
