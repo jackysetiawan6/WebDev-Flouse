@@ -1,0 +1,14 @@
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.linked-text.back-login {
+    font-size: calc(var(--text-medium) - 3px);
+}
+
+.input-text {
+    margin-bottom: 1vh;
+}

@@ -16,7 +16,7 @@
             <div class="main-form">
                 <h1 class="welcome-text">Welcome back</h1>
                 <div class="input-box email">
-                    <input required="" type="text" name="text" class="input-text email">
+                    <input required="" type="text" name="email-text" class="input-text email">
                     <label class="input-label email">Email</label>
                 </div>
             </div>
@@ -43,12 +43,12 @@
             <div class="terms-create-account">
                 <p>
                     By continuing, you agree to Flouse’s
-                    <a href="" class="linked-text">Terms and Conditions</a>
+                    <a href="/about/terms-and-conditions" class="linked-text">Terms and Conditions</a>
                 </p>
                 <hr class="seperate-line">
                 <p>
                     Haven’t heard Flouse before?
-                    <a href="" class="linked-text">Create Account</a>
+                    <a href="/register" class="linked-text">Create Account</a>
                 </p>
             </div>
         </div>

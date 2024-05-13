@@ -1,10 +1,52 @@
-.text-under {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+body::-webkit-scrollbar {
+    display: none;
 }
 
-.remember-me {
+.container {
+    height: max-content;
+    gap: 5vh;
+}
+
+.continue-text {
     display: flex;
-    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vw;
+    font-weight: 350;
+    justify-content: center;
+}
+
+.continue-text:before,
+.continue-text:after {
+    background-color: black;
+    content: "";
+    display: inline-block;
+    height: .5px;
+    width: 10vw;
+}
+
+.login-with {
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+}
+
+.logwith-button {
+    padding: 13px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+  
+.logwith-button img {
+    height: 35px;
+    width: 35px;
+}
+  
+.logwith-button:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 2px 2px 8px;
 }
