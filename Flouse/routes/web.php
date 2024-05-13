@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('Home');
 });
+Route::get('/profile', function () {
+    return view('Profile');
+});
 
 Route::get('/navbar', function () {
     return view('Navbar');
@@ -15,7 +18,11 @@ Route::get('/footer', function () {
 });
 
 Route::get('/login', function () {
-    return view('Login');
+    return view('Auth/LoginEmail');
+});
+
+Route::get('/login/password', function () {
+    return view('Auth/LoginPassword');
 });
 
 Route::get('/store', function () {

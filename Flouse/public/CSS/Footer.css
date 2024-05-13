@@ -29,11 +29,35 @@ footer {
     font-weight: 400;
 }
 
+.input-form {
+    font-family: "Raleway", sans-serif;
+    gap: 0;
+    display: flex;
+
+}
+
 .input-form input {
-    width: 781px;
-    height: 69.69px;
-    border-radius: 3px;
-    border: 1px solid #000;
+    width: 667px;
+    height: 60px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #B3B2B2;
+    padding: 0 24px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.input-form button {
+    width: 121px;
+    height: 60px;
+    border-radius: 0 10px 10px 0;
+    background-image: linear-gradient(180deg, rgba(89, 126, 82, 1), rgba(79, 100, 76, 1));
+    color: var(--pure-light);
+    font-size: 20px;
+    font-weight: 200;
+    cursor: pointer;
+    border: 1px solid #B3B2B2;
+
+
 }
 
 .footer-last-place,

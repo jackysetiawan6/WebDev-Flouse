@@ -1,18 +1,18 @@
-@import url(../CSS/Public.css);
-
 .container {
     font-family: "Source Sans 3", serif;
     background-color: var(--background-default);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     height: 100vh;
-    padding: 0 30vw;
+    padding: 50px 0;
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 5vh;
 }
 
@@ -23,46 +23,50 @@
 .main-form {
     display: flex;
     flex-direction: column;
-    gap: 1vh;
+    align-items: center;
+    width: 30vw;
+    gap: 16px;
 }
 
-.sign-in-text {
+.welcome-text {
+    width: 100%;
     font-weight: 300;
 }
 
-.email {
+.input-box {
     position: relative;
+    width: 100%;
 }
 
-.input-email {
+.input-text {
     border: solid 2px #D0D0D0;
     border-radius: 1rem;
     background: none;
-    width: 37.5vw;
+    width: 100%;
     padding: 1rem;
     font-size: 1.2rem;
     color: black;
     transition: border 150ms cubic-bezier(0.4,0,0.2,1);
 }
 
-.email-label {
+.input-label {
     position: absolute;
     justify-self: center;
-    top: -3px;
+    top: 0;
     left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #8D8D8D;
     pointer-events: none;
     transform: translateY(1rem);
     transition: 150ms cubic-bezier(0.4,0,0.2,1);
 }
 
-.input-email:focus, .input-email:valid {
+.input-text:focus, .input-text:valid {
     outline: none;
     border: 2px solid #73A16A;
 }
 
-.input-email:focus ~ label, .input-email:valid ~ label {
+.input-text:focus ~ label, .input-text:valid ~ label {
     transform: translateY(-50%) scale(0.8);
     background-color: #F8F9F1;
     padding: 0 .2em;
@@ -71,11 +75,7 @@
     top: 0;
 }
 
-.continue {
-    align-self: center;
-}
-
-.continue-button {
+.submit-button {
     border: none;
     font-family: "Source Sans 3", serif;
     font-weight: 250;
@@ -88,61 +88,9 @@
     transition: all ease-in-out 0.3s;
 }
 
-.continue-button:hover {
+.submit-button:hover {
     background-color: #648E5C;
     transition: all ease-in-out 0.2s;
-}
-
-.continue-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5vw;
-    font-weight: 350;
-    justify-content: center;
-}
-
-.continue-text:before,
-.continue-text:after {
-    background-color: black;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    width: 10vw;
-}
-
-.login-with {
-    display: flex;
-    gap: 3vw;
-    justify-content: center;
-}
-
-.logwith-button {
-    padding: 12px;
-    border-radius: 50%;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 5px;
-    background-color: white;
-    cursor: pointer;
-    transition: all .6s ease;
-}
-  
-.logwith-button img {
-    height: 40px;
-    width: 40px;
-}
-  
-.logwith-button:hover {
-    transform: scale(1.1);
-    box-shadow: rgba(0, 0, 0, 0.24) 2px 2px 8px;
-}
-
-.terms-create-account {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    font-weight: 350;
 }
 
 .linked-text {
@@ -156,11 +104,6 @@
     transition: all .6s ease;
 }
 
-.seperate-line {
-    width: 15vw;
-}
-
 .copyright {
     font-weight: 350;
-    align-self: center;
 }
