@@ -9,7 +9,6 @@ Route::get('/profile', function () {
     return view('Profile');
 });
 
-
 Route::get('/navbar', function () {
     return view('Navbar');
 });
@@ -29,3 +28,26 @@ Route::get('/login', function () {
 Route::get('/login/password', function () {
     return view('Auth/LoginPassword');
 });
+
+Route::get('/store', function () {
+    $categories = [
+        'Aster',
+        'Calla Lily',
+        'Carnations',
+        'Chrysanthemum',
+        'Daisy',
+        'Snapdragon'
+    ];
+    $colors = [
+        'Red',
+        'Orange',
+        'Yellow',
+        'Green',
+        'Blue',
+        'Purple',
+        'Pink',
+        'White',
+        'Black'
+    ];
+    return view('Store', ['categories' => $categories, 'colors' => $colors]);
+})->name('store');

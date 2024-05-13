@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Balthazar&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
 * {
@@ -10,11 +9,18 @@
 }
 
 :root {
-    --background-default: #F8F9F1;
+    --background-default: #f8f9f1;
     --pure-black: #000;
     --pure-light: #fff;
-    --golden-title: #C6A969;
-    --green-color: #73A16A;
-    --footer-green-color: #E3F0DB;
-    --footer-green-dark-color: #A5C695;
+    --golden-title: #c6a969;
+    --green-color: #73a16a;
+    --footer-green-color: #e3f0db;
+    --footer-green-dark-color: #a5c695;
+    --stroke-color: #d0d0d0;
+    --raleway: "Raleway", sans-serif;
+    --balthazar: "Balthazar", serif;
+    --source-sans-pro: "Source Sans 3", sans-serif;
+    --text-large: 30px;
+    --text-medium: 24px;
+    --text-small: 16px;
 }
