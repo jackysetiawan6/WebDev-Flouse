@@ -1,3 +1,7 @@
+footer {
+    font-family: "Raleway", sans-serif;
+}
+
 .footer-title-and-input {
     display: flex;
     flex-direction: column;
@@ -26,7 +30,6 @@
 }
 
 .input-form {
-    font-family: "Raleway", sans-serif;
     gap: 0;
     display: flex;
 

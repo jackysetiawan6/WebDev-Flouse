@@ -1,0 +1,43 @@
+@import url(../CSS/Public.css);
+
+.container-for-transaction-page {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.navbar-for-transaction-page {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-default);
+}
+
+.navbar-for-transaction-page ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    border: 0.5px ridge #D0D0D0;
+    border-radius: 20px 20px 0 0;
+    gap: 20px;
+    width: 78.875rem;
+}
+
+.navbar-for-transaction-page ul li a {
+    color: var(--pure-black);
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 40px;
+    font-weight: 500;
+}
+
+.transaction-content-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 34rem;
+    border: 0.5px ridge #D0D0D0;
+    border-radius: 0 0 20px 20px;
+    width: 78.875rem;
+}
