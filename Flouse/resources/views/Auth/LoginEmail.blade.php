@@ -52,7 +52,7 @@
                 </p>
             </div>
         </div>
-        <p class="copyright">© 2024 Flouse. All rights reserved</p>
+        <p class="copyright">© 2024 Flouse</p>
     </div>
 </body>
 </html>

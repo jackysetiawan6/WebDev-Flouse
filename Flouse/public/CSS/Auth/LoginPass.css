@@ -21,18 +21,7 @@
 }
 
 .linked-text {
-    font-size: 20px;
-}
-
-.text-under {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.remember-me {
-    display: flex;
-    gap: 5px;
+    text-decoration: none;
 }
 
 .linked-text.forgot {
