@@ -7,6 +7,20 @@ body::-webkit-scrollbar {
     gap: 5vh;
 }
 
+.input-box.pass {
+    display: flex;
+    justify-content: end;
+}
+
+.show-hide-pass{
+    position: absolute;
+    align-self: center;
+    width: 30px;
+    cursor: pointer;
+    margin-right: 17px;
+    opacity: 0.8;
+}
+
 .continue-text {
     display: flex;
     flex-direction: row;
