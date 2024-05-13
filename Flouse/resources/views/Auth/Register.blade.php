@@ -16,21 +16,21 @@
             <div class="main-form">
                 <h1 class="welcome-text">Create Account</h1>
                 <div class="input-box name">
-                    <input required="" type="text" name="name-text" class="input-text name">
+                    <input required="" type="text" class="input-text name">
                     <label class="input-label name">Full Name (Optional)</label>
                 </div>
                 <div class="input-box email">
-                    <input required="" type="text" name="email-text" class="input-text email">
+                    <input required="" type="text" class="input-text email">
                     <label class="input-label email">Email</label>
                     <p class="error-msg">Invalid email (example: yourname@email.com)</p>
                 </div>
                 <div class="input-box pass">
-                    <input required="" type="password" name="pass-text" class="input-text pass">
+                    <input required="" type="password" class="input-text pass" id="pass-text">
                     <label class="input-label pass">Password</label>
                     <p class="error-msg">Must consist of minumum 8 alphanum</p>
                 </div>
                 <div class="input-box re-pass">
-                    <input required="" type="password" name="re-pass-text" class="input-text re-pass">
+                    <input required="" type="password"" class="input-text re-pass">
                     <label class="input-label re-pass">Re-enter Password</label>
                     <p class="error-msg">Passwords do not match</p>
                 </div>

@@ -38,7 +38,7 @@ body::-webkit-scrollbar {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 5px;
     background-color: white;
     cursor: pointer;
-    transition: all .6s ease;
+    transition: all .3s ease;
 }
   
 .logwith-button img {
@@ -48,5 +48,6 @@ body::-webkit-scrollbar {
   
 .logwith-button:hover {
     transform: scale(1.1);
+    transition: all .3s ease;
     box-shadow: rgba(0, 0, 0, 0.24) 2px 2px 8px;
 }
