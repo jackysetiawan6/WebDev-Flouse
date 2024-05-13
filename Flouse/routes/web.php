@@ -18,6 +18,10 @@ Route::get('/footer', function () {
     return view('Footer');
 });
 
+Route::get('/register', function () {
+    return view('Auth/Register');
+});
+
 Route::get('/login', function () {
     return view('Auth/LoginEmail');
 });

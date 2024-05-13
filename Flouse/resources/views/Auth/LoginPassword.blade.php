@@ -21,13 +21,13 @@
                     <a href="/login" class="linked-text">Edit</a>
                 </div>
                 <div class="input-box password">
-                    <input required="" type="password" name="text" class="input-text password">
+                    <input required="" type="password" name="pass" class="input-text password">
                     <label class="input-label password">Password</label>
                 </div>
                 <div class="text-under">
                     <div class="remember-me">
-                        <input type="checkbox" class="checkbox-agree">
-                        <p>Remember me in this device</p>
+                        <input type="checkbox" name="cbox-agree" class="checkbox-agree">
+                        <label for="cbox-agree" class="cbox-label">Remember me in this device</label>
                     </div>
                     <a href="" class="linked-text forgot">Forgot your password?</a>
                 </div>
@@ -36,7 +36,7 @@
                 <a href="/home"><button class="submit-button">Sign In</button></a>
             </div>
         </div>
-        <p class="copyright">© 2024 Flouse. All rights reserved</p>
+        <p class="copyright">© 2024 Flouse</p>
     </div>
 </body>
 </html>
