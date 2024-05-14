@@ -33,7 +33,68 @@
                 </div>
                 <div class="transaction-content-box">
                     <div class="content-for-transactions-page">
-
+                        <div class="top-text-date">
+                            <p1>13 March 2024</p1>
+                            <div class="dot"></div>
+                            <p>19 : 08</p>
+                            <p>NV/20230428/MPL/3199770557</p>
+                        </div>
+                        <div class="mid-content">
+                            <div class="left-right-divider">
+                                <div class="left-content">
+                                    <div class="image-for-mid-content">
+                                        <img src="../image/ProfileFlower.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mid-text-content">
+                                    <p3>Anneliese Flower Bouquet</p3>
+                                    <div class="price-tag-items">
+                                        <p>2 item (s)</p>
+                                        <p>x</p>
+                                        <p>IDR 560,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <p>Total Price</p>
+                                <p2>IDR 1,120,000</p2>
+                            </div>
+                        </div>
+                        <div class="button-bot-content">
+                            <a href="">Buy Again</a>
+                        </div>
+                    </div>
+                    <div class="content-for-transactions-page">
+                        <div class="top-text-date">
+                            <p1>13 March 2024</p1>
+                            <div class="dot"></div>
+                            <p>19 : 08</p>
+                            <p>NV/20230428/MPL/3199770557</p>
+                        </div>
+                        <div class="mid-content">
+                            <div class="left-right-divider">
+                                <div class="left-content">
+                                    <div class="image-for-mid-content">
+                                        <img src="../image/ProfileFlower.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="mid-text-content">
+                                    <p3>Anneliese Flower Bouquet</p3>
+                                    <div class="price-tag-items">
+                                        <p>2 item (s)</p>
+                                        <p>x</p>
+                                        <p>IDR 560,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <p>Total Price</p>
+                                <p2>IDR 1,120,000</p2>
+                            </div>
+                        </div>
+                        <div class="button-bot-content">
+                            <a href="">Buy Again</a>
+                        </div>
                     </div>
                 </div>
             </div>

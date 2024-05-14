@@ -24,3 +24,7 @@
     --text-medium: 24px;
     --text-small: 16px;
 }
+
+footer {
+    font-family: var(--raleway);
+}
