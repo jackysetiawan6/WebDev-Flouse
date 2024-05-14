@@ -7,6 +7,10 @@ body::-webkit-scrollbar {
     gap: 5vh;
 }
 
+.input-text.name {
+    margin-bottom: 2vh;
+}
+
 .input-box.pass {
     display: flex;
     justify-content: end;
