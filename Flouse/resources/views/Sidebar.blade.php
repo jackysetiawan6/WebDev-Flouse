@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../CSS/sidebar.css">
+<link rel="stylesheet" href="../CSS/sideprofile.css">
 
 <div class="sidebar-profile-page">
     <div class="profile-with-profile-pic">
