@@ -1,1 +1,151 @@
-@import url(../CSS/Address.css);
+@import url(../CSS/Public.css);
+
+
+.content-address-in-profile-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button-with-plus {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.button-with-plus pplus,
+.button-with-plus p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pure-light);
+}
+
+.button-with-plus pplus {
+    font-size: 2.2em;
+    font-weight: 300;
+    width: 50px;
+    height: 50px;
+    background-color: var(--green-color);
+    border-radius: 18px 0 0 18px;
+    border-right: 1px solid;
+    cursor: pointer;
+}
+
+.button-with-plus p1 {
+    font-size: 21px;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    background-color: var(--green-color);
+    border-radius: 0 18px 18px 0;
+    cursor: pointer;
+}
+
+.address-box-for-profile-page {
+    display: flex;
+    /* width: 73.938rem; */
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px ridge #D0D0D0;
+    height: 19.938rem;
+    justify-content: space-around;
+    padding: 30px;
+    cursor: pointer;
+
+}
+
+.address-box-for-profile-page:hover {
+    /* background-color: #eaf8e5; */
+    border: 2px solid #87f571;
+    padding: 29px;
+}
+
+.title-address {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+}
+
+.title-address p2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.title-address pmain {
+    font-size: 18px;
+    font-weight: 400;
+    width: 73px;
+    height: 30px;
+    background-color: #7B7B7B;
+    color: var(--pure-light);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-address-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-with-plus p1:hover {
+    background-color: #54754e;
+}
+
+.name-address-user pname {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.name-address-user p3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #7A7A7A;
+}
+
+.location-address-user ploc {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--pure-black);
+}
+
+.location-address-user {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.share-change-address {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.share-change-address p {
+    font-size: 24px;
+    color: var(--green-color);
+}
+
+.content-box-address-data {
+    display: flex;
+    flex-direction: column;
+    min-height: 38.25rem;
+    border: 1px ridge #D0D0D0;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 25px;
+    font-family: var(--source-sans-pro);
+    width: 78.813rem;
+}
+
+.coloring {
+    background-color: #DCFAD1;
+    border: 1px ridge #6BFF4F;
+}

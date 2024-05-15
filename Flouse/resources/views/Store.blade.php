@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,17 @@
         <link rel="stylesheet" href="../CSS/Public.css">
         <link rel="stylesheet" href="../CSS/Store.css">
     </head>
+
     <body>
         <div class="container">
-            @include('Navbar')
+            @include('components/Navbar')
             <div class="container-main">
                 <div class="main-banner">
                     <img class="banner-image" src="{{ asset('Image/Store/Banner.svg') }}" alt="Banner">
                     <div class="banner-text">
                         <p>Bouquet</p>
-                        <p>Breathtaking blooms, thoughtfully arranged to express emotions beautifully. A timeless gift, captivating hearts with vibrant colors and delicate charm</p>
+                        <p>Breathtaking blooms, thoughtfully arranged to express emotions beautifully. A timeless gift, captivating hearts with
+                            vibrant colors and delicate charm</p>
                     </div>
                 </div>
                 <div class="main-content">
@@ -23,7 +26,8 @@
                         <div class="top-left">
                             <div class="left-filter">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path d="M3,17V19H9V17H3M3,5V7H13V5H3M13,21V19H21V17H13V15H11V21H13M7,9V11H3V13H7V15H9V9H7M21,13V11H11V13H21M15,9H17V7H21V5H17V3H15V9Z" />
+                                    <path
+                                        d="M3,17V19H9V17H3M3,5V7H13V5H3M13,21V19H21V17H13V15H11V21H13M7,9V11H3V13H7V15H9V9H7M21,13V11H11V13H21M15,9H17V7H21V5H17V3H15V9Z" />
                                 </svg>
                                 <p class="text">Filter</p>
                             </div>
@@ -113,8 +117,9 @@
                     </div>
                 </div>
             </div>
-            @include('Footer')
+            @include('components/Footer')
         </div>
         <script src="../JS/Store.js"></script>
     </body>
+
 </html>

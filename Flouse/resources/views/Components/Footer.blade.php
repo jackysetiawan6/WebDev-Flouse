@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../CSS/Footer.css">
+<link rel="stylesheet" href="../CSS/Components/Footer.css">
 
 <footer>
     <div class="footer-title-and-input">

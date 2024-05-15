@@ -10,9 +10,9 @@
     </head>
 
     <body>
-        @include('navbar')
+        @include('components/navbar')
         <div class="container-for-profile-page-main">
-            @include('sidebar')
+            @include('components/sidebar')
             <div class="content-for-profile-page">
                 <div class="profile-image-editor">
                     <div class="image-place"></div>
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </div>
-        @include('footer')
+        @include('components/footer')
     </body>
 
 </html>

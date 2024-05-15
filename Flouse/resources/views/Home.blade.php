@@ -12,7 +12,7 @@
 
     <body>
         <div class="container-home">
-            @include('Navbar')
+            @include('components/navbar')
             <div class="landing-page-01">
                 <div class="landing-page-01-left">
                     <img src="../image/LandingPage01.svg" alt="" class="landingpage01-mod">
@@ -28,7 +28,7 @@
                             Japan, China, Korea, and Southeast Asia.
                         </div>
                         <div class="discover-more">
-                        <button class="discover-button">Discover More</button>
+                            <button class="discover-button">Discover More</button>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,8 @@
                         <div class="landing-page-02-title">House Plant / Verdent Villa</div>
                         <div class="landing-page-02-sub-title">Step into Verdent Villa, where lush houseplants transform every room into a green
                             oasis. From cascading vines to aromatic herbs, our sanctuary brings nature indoors for a tranquil living experience.</div>
-                        <div class="landing-page-02-explore-button-right"><button class="button-mod-for-landing right">Explore our latest</button></div>
+                        <div class="landing-page-02-explore-button-right"><button class="button-mod-for-landing right">Explore our latest</button>
+                        </div>
                     </div>
                 </div>
                 <div class="landing-page-02-banner-02">
@@ -113,14 +114,15 @@
                         <div class="landing-page-04-title">Nature Flower</div>
                         <div class="landing-page-04-sub-title">Discover the splendor of nature's blooms with our collection. Each flower embodies the
                             beauty and wonder of the natural world, bringing joy to any space</div>
-                        <div class="landing-page-02-explore-button-right"><button class="button-mod-for-landing right">Explore our latest</button></div>
+                        <div class="landing-page-02-explore-button-right"><button class="button-mod-for-landing right">Explore our latest</button>
+                        </div>
                     </div>
                     <div class="landing-page-04-banner-02">
                         <img src="../image/SampleArtificial01.svg" alt="">
                     </div>
                 </div>
             </div>
-            @include('Footer')
+            @include('components/Footer')
     </body>
 
 </html>
