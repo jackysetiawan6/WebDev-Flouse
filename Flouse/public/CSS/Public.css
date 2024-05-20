@@ -10,8 +10,8 @@
 
 :root {
     --background-default: #f8f9f1;
-    --pure-black: #000;
-    --pure-light: #fff;
+    --pure-black: #000000;
+    --pure-light: #ffffff;
     --golden-title: #c6a969;
     --green-color: #73a16a;
     --footer-green-color: #e3f0db;
@@ -20,7 +20,8 @@
     --raleway: "Raleway", sans-serif;
     --balthazar: "Balthazar", serif;
     --source-sans-pro: "Source Sans 3", sans-serif;
-    --text-large: 30px;
-    --text-medium: 24px;
-    --text-small: 16px;
+    --text-huge: 3.5rem;
+    --text-large: 1.875rem;
+    --text-medium: 1.5rem;
+    --text-small: 1rem;
 }

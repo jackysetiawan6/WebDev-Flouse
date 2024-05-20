@@ -36,7 +36,7 @@
 .banner-text p:nth-child(1) {
     font-family: "Balthazar", serif;
     font-weight: 400;
-    font-size: 56px;
+    font-size: var(--text-huge);
     margin-bottom: 20px;
 }
 
@@ -44,7 +44,7 @@
     height: fit-content;
     width: 596px;
     font-family: var(--source-sans-pro);
-    font-size: 24px;
+    font-size: var(--text-medium);
     line-height: 40px;
 }
 
@@ -96,7 +96,7 @@
     height: fit-content;
     width: fit-content;
     font-weight: 300;
-    font-size: 24px;
+    font-size: var(--text-medium);
 }
 
 .top-left span {
@@ -109,7 +109,7 @@
     width: 100%;
     text-align: center;
     font-weight: 300;
-    font-size: 28px;
+    font-size: var(--text-medium);
 }
 
 .additional {
@@ -122,12 +122,12 @@
 
 .additional p:first-child {
     font-weight: 300;
-    font-size: 28px;
+    font-size: var(--text-medium);
 }
 
 .page {
     font-weight: 300;
-    font-size: 28px;
+    font-size: var(--text-medium);
     cursor: pointer;
 }
 
@@ -156,7 +156,6 @@
     gap: 20px;
     position: sticky;
     top: 160px;
-    margin-bottom: -100px;
     font-family: var(--source-sans-pro);
     font-weight: 300;
     font-size: var(--text-medium);
@@ -213,6 +212,14 @@
 .filter-child.active .filter-options {
     height: fit-content;
     margin: 20px 20px 0 70px;
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .filter-options label {
@@ -308,7 +315,7 @@
     width: 100%;
     font-family: var(--source-sans-pro);
     font-weight: 300;
-    font-size: calc(var(--text-medium) - 5px);
+    font-size: calc(var(--text-medium) - 4px);
     background-color: transparent;
     border: 1px solid #434343;
     border-radius: 10px;
@@ -329,8 +336,16 @@
     background-color: transparent;
     font-family: var(--source-sans-pro);
     font-weight: 300;
-    font-size: calc(var(--text-medium) - 5px);
+    font-size: calc(var(--text-medium) - 4px);
     padding: 0;
+}
+
+.range-max input::-webkit-inner-spin-button,
+.range-min input::-webkit-inner-spin-button,
+.range-max input::-webkit-outer-spin-button,
+.range-min input::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
 }
 
 .range-max input:focus,
@@ -351,7 +366,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 8%;
 }
 
 .product-image {

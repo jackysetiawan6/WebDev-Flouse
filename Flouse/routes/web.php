@@ -52,23 +52,17 @@ Route::get('/login/password-reset', function () {
 
 Route::get('/store', function () {
     $categories = [
-        'Aster',
-        'Calla Lily',
-        'Carnations',
-        'Chrysanthemum',
-        'Daisy',
-        'Snapdragon'
+        'Aster', 'Calla Lily', 'Carnations',
+        'Chrysanthemum', 'Daisy', 'Snapdragon'
     ];
     $colors = [
-        'Red',
-        'Orange',
-        'Yellow',
-        'Green',
-        'Blue',
-        'Purple',
-        'Pink',
-        'White',
+        'Red', 'Orange', 'Yellow', 'Green',
+        'Blue', 'Purple', 'Pink', 'White',
         'Black'
     ];
     return view('Store', ['categories' => $categories, 'colors' => $colors]);
 })->name('store');
+
+Route::get('/forum', function () {
+    return view('Forum');
+})->name('forum');

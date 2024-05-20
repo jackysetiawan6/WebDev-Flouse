@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="content-bottom">
-                        <div class="filter active">
+                        <div class="filter">
                             <div class="filter-child">
                                 <div class="filter-title">
                                     <img src="{{ asset('Image/Store/Cevron.svg') }}" alt="Down">
@@ -59,12 +59,13 @@
                                     @foreach ($colors as $color)
                                         <label for="option-{{ $color }}">
                                             <input type="checkbox" id="option-{{ $color }}" name="option-{{ $color }}">
+                                            <div class="circle" style="background-color: {{ $color }}"></div>
                                             {{ $color }}
                                         </label>
                                     @endforeach
                                 </div>
                             </div>
-                            <div class="filter-child active">
+                            <div class="filter-child">
                                 <div class="filter-title">
                                     <img src="{{ asset('Image/Store/Cevron.svg') }}" alt="Down">
                                     <p>Price</p>
@@ -73,18 +74,18 @@
                                     <div class="range">
                                         <div class="range-slider">
                                             <span class="range-selected"></span>
-                                            <input type="range" class="slider-min" value="0" min="0" max="10000000" step="1">
-                                            <input type="range" class="slider-max" value="10000000" min="0" max="10000000" step="1">
+                                            <input type="range" class="slider-min" value="0" min="0" max="5000000" step="5000">
+                                            <input type="range" class="slider-max" value="5000000" min="0" max="5000000" step="5000">
                                         </div>
                                     </div>
                                     <div class="range-price">
                                         <div class="range-min">
                                             <p>IDR</p>
-                                            <input type="text" name="min" maxlength="8" value="0">
+                                            <input type="number" name="min" value="0">
                                         </div>
                                         <div class="range-max">
                                             <p>IDR</p>
-                                            <input type="text" name="max" maxlength="8" value="10000000">
+                                            <input type="number" name="max" value="5000000">
                                         </div>
                                     </div>
                                 </div>
