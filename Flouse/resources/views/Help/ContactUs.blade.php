@@ -12,18 +12,20 @@
     <div class="page">
         @include("Components/SideAbout")
         <div class="right">
-            <h2 class="right2">Payment</h2>
-            <div class="apa2">Secure and Convenient Payment Options at Flouse</div>
+            <h2 class="right2">Contact Us</h2>
+            <div class="apa2">Flouse: Here to Help!</div>
+            <div class="apa3">At Flouse, we're committed to providing you with a seamless and enjoyable plant shopping experience.  Should you have any questions or require assistance, our friendly customer service team is here to help!</div>
             <div class="apa3">
-                At Flouse, we make purchasing your plants a breeze! We offer a variety of secure payment options to suit your preference:
-                <ul class="point">
-                    <li>E-Wallets: For a quick and easy checkout, use your favorite e-wallets, Ovo and Gopay.</li>
-                    <li>Bank Transfers: We accept bank transfers from major Indonesian banks for your convenience, including BCA, BRI, and Mandiri.</li>
-                    <li>Credit/Debit Cards: Enjoy the flexibility of using your credit or debit card for your Flouse purchases. We accept Mastercard, Visa, and American Express.</li>
-                </ul>
-                All transactions are processed securely through trusted payment gateways to ensure your information remains protected.
-Choose the payment method that best suits you and complete your order with complete peace of mind!
+                Here are the ways you can reach us:
+                    <li></li>
+                    <li>Email:  For detailed inquiries, send your email to flouse@customer.care. Our team will respond promptly.</li>
+                    <li>Phone:  For any questions related to your order, call our corporate line at 021-23847544.</li>
+                We appreciate your inquiry and look forward to hearing from you!
+                Alternatively, you can visit our FAQ page for answers to frequently asked questions.
             </div>
+            <div class="apa3">Whatsapp: Send us a message at 081219431924 for quick and personalized assistance.</div>
+            <div class="apa3">Email:  For detailed inquiries, send your email to flouse@customer.care. Our team will respond promptly.</div>
+            <div class="apa3"></div>
         </div>
     </div>
     @include("Components/Footer")

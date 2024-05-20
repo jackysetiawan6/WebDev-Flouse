@@ -1,0 +1,48 @@
+body {
+    background-color: var(--background-default);
+}
+
+.page{
+    width: calc(100vw-200px);
+    display: flex;
+    justify-content: space-between;
+    margin: 79px 100px 30px 100px;
+}
+
+.right{
+    width: 75%;
+    margin-top: 30px;
+}
+
+.right2{
+    font-family: var(--source-sans-pro);
+    font-size: var(--text-huge);
+}
+
+.apa2{
+    margin-top: 20px;
+    font-family: var(--raleway);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.apa3{
+    font-size: var(--text-medium);
+    font-family: var(--raleway);
+    margin-top: 10px;
+    line-height: 2rem;
+}
+
+.point{
+    margin-left: 30px;
+}
+
+.contact{
+    background-color: var(--green-color);
+    border-radius: 10px;
+    color: var(--pure-light);
+}
+
+.top2 .contact {
+    color: var(--pure-light);
+}
