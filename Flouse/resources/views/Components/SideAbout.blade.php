@@ -17,7 +17,7 @@
         <div class="top2">
             <a href="" class="apa contact">Contact Us</a>
             <a href="" class="apa order">How to Order</a>
-            <a href="" class="apa plant">Plant Care Tips</a>
+            <a href="" class="apa care">Plant Care Tips</a>
             <a href="" class="apa payment">Payment</a>
             <a href="" class="apa shipping">Shipping</a>
             <a href="" class="apa faq">FAQ</a>
