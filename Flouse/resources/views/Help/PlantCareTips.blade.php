@@ -75,7 +75,7 @@
             </div>
             
             <div class="apa3"><b>Bonus Tip!</b> Regularly rotate your plant to ensure even growth on all sides.</div>
-            <div class="apa3"><b>Remember:</b> These are general guidelines.  For specific care needs,  research your plant variety to ensure it thrives in your home environment.  Flouse also offers additional plant care information on many of our product pages. Happy planting!</div>
+            <div class="apa3"><b>Remember:</b> These are general guidelines. For specific care needs,  research your plant variety to ensure it thrives in your home environment.  Flouse also offers additional plant care information on many of our product pages. Happy planting!</div>
         </div>
     </div>
     @include("Components/Footer")
