@@ -109,7 +109,7 @@
             </div>
             <div class="payment-methods-footer footer-information">
                 <div class="title-for-footer">Payment Methods</div>
-                {{-- <ul>
+                <ul>
                     <li>
                         <img src="../image/americanexpresslogo.svg" alt="">
                     </li>
@@ -122,6 +122,8 @@
                     <li>
                         <img src="../image/gopaylogo.svg" alt="">
                     </li>
+                </ul>
+                <ul>
                     <li>
                         <img src="../image/mandirilogo.svg" alt="">
                     </li>
@@ -134,7 +136,7 @@
                     <li>
                         <img src="../image/visa.svg" alt="">
                     </li>
-                </ul> --}}
+                </ul>
             </div>
         </div>
     </div>

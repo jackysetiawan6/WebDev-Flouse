@@ -18,6 +18,11 @@ Route::get('/transaction', function () {
     return view('transactions');
 });
 
+Route::get('/transaction/nan', function () {
+    return view('nan');
+});
+
+
 Route::get('/address', function () {
     return view('address');
 });
@@ -65,6 +70,26 @@ Route::get('/store', function () {
 
 Route::get('/help/payment', function () {
     return view('Help/Payment');
+});
+
+Route::get('/help/howtoorder', function () {
+    return view('Help/HowToOrder');
+});
+
+Route::get('/help/contactus', function () {
+    return view('Help/ContactUs');
+});
+
+Route::get('/help/shipping', function () {
+    return view('Help/Shipping');
+});
+
+Route::get('/help/plantcaretips', function () {
+    return view('Help/PlantCareTips');
+});
+
+Route::get('/help/faq', function () {
+    return view('Help/FAQ');
 });
 
 Route::get('/forum', function () {
