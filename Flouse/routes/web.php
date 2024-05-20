@@ -88,6 +88,10 @@ Route::get('/help/plantcaretips', function () {
     return view('Help/PlantCareTips');
 });
 
+Route::get('/help/faq', function () {
+    return view('Help/FAQ');
+});
+
 Route::get('/forum', function () {
     return view('Forum');
 })->name('forum');
