@@ -99,3 +99,7 @@ Route::get('/forum', function () {
 Route::get('/detail', function () {
     return view('ProductDetail');
 });
+
+Route::get('/cart', function () {
+    return view('Cart');
+});

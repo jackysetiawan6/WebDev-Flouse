@@ -45,7 +45,7 @@ body {
 }
 
 .ori-price {
-    color: #898989;
+    color: var(--hovered-text);
     font-weight: 200;
     text-decoration: line-through;
 }
