@@ -2,7 +2,7 @@
 
 .container-for-profile-page-main {
     min-height: 100vh;
-    padding: 120px 80px 0;
+    padding: 120px 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -131,6 +131,21 @@
 
 
 #overlay-effect {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay-effect-change-contact {
     position: fixed;
     display: none;
     width: 100%;
