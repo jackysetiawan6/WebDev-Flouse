@@ -70,3 +70,7 @@ Route::get('/help/payment', function () {
 Route::get('/forum', function () {
     return view('Forum');
 })->name('forum');
+
+Route::get('/detail', function () {
+    return view('ProductDetail');
+});

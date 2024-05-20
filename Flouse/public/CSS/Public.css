@@ -11,6 +11,7 @@
 :root {
     --background-default: #f8f9f1;
     --pure-black: #000000;
+    --hovered-text: #555555;
     --pure-light: #ffffff;
     --golden-title: #c6a969;
     --green-color: #73a16a;
