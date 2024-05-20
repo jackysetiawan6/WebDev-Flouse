@@ -1,0 +1,37 @@
+body {
+    background-color: var(--background-default);
+}
+
+.page{
+    width: calc(100vw-200px);
+    display: flex;
+    justify-content: space-between;
+    margin: 79px 100px 30px 100px;
+}
+
+.right{
+    width: 80%;
+    margin-top: 30px;
+}
+
+.right2{
+    font-family: var(--source-sans-pro);
+    font-size: 3rem;
+}
+
+.apa2{
+    margin-top: 20px;
+    font-family: var(--raleway);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.apa3{
+    font-size: 1.5rem;
+    font-family: var(--raleway);
+    margin-top: 10px;
+}
+
+.point{
+    margin-left: 30px;
+}

@@ -63,6 +63,10 @@ Route::get('/store', function () {
     return view('Store', ['categories' => $categories, 'colors' => $colors]);
 })->name('store');
 
+Route::get('/help/payment', function () {
+    return view('Help/Payment');
+});
+
 Route::get('/forum', function () {
     return view('Forum');
 })->name('forum');

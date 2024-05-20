@@ -1,134 +1,158 @@
 @import url(../CSS/Public.css);
 
-.container-for-profile-page-main {
-    min-height: 100vh;
-    padding: 120px 80px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* align-items: center; */
-    font-family: "Raleway", sans-serif;
-    background-color: var(--background-default);
-    gap: 60px;
 
-}
-
-.content-for-profile-page {
-    width: 78.875rem;
-    height: 612px;
-    border: 0.5px ridge #D0D0D0;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.profile-image-editor {
+.content-address-in-profile-page {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    width: 489px;
-    height: 504px;
     justify-content: center;
 }
 
-.button-changer {
-    width: 343px;
+.button-with-plus {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.button-with-plus pplus,
+.button-with-plus p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pure-light);
+}
+
+.button-with-plus pplus {
+    font-size: 2.2em;
+    font-weight: 300;
+    width: 50px;
     height: 50px;
     background-color: var(--green-color);
-    color: var(--pure-light);
-    font-size: 21px;
-    font-weight: 300;
-    border: none;
-    border-radius: 18px;
+    border-radius: 18px 0 0 18px;
+    border-right: 1px solid;
     cursor: pointer;
-    align-items: center;
+}
+
+.button-with-plus p1 {
+    font-size: 21px;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    background-color: var(--green-color);
+    border-radius: 0 18px 18px 0;
+    cursor: pointer;
+}
+
+.address-box-for-profile-page {
+    display: flex;
+    /* width: 73.938rem; */
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px ridge #D0D0D0;
+    height: 19.938rem;
+    justify-content: space-around;
+    padding: 30px;
+    cursor: pointer;
+
+}
+
+.address-box-for-profile-page:hover {
+    /* background-color: #eaf8e5; */
+    border: 2px solid #87f571;
+    padding: 29px;
+}
+
+.title-address {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+}
+
+.title-address p2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.title-address pmain {
+    font-size: 18px;
+    font-weight: 400;
+    width: 73px;
+    height: 30px;
+    background-color: #7B7B7B;
+    color: var(--pure-light);
+    border-radius: 3px;
     display: flex;
     justify-content: center;
-}
-
-.image-place {
-    width: 427px;
-    height: 354px;
-    background-color: #D9D9D9;
-}
-
-.data-title {
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--pure-black);
-}
-
-.data-box-title {
-    font-size: 24px;
-    color: var(--pure-black);
-}
-
-.data-box {
-    font-size: 24px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.data-with-data-title {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.data-form-name-dll {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.data-box-title {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.personal-data-box {
-    display: flex;
-    flex-direction: row;
-}
-
-.change-contact-box {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.personal-data-change-contact-box {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.contact-box-mod {
-    display: flex;
-    flex-direction: row;
     align-items: center;
+}
+
+.name-address-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-with-plus p1:hover {
+    background-color: #54754e;
+}
+
+.name-address-user pname {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.name-address-user p3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #7A7A7A;
+}
+
+.location-address-user ploc {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--pure-black);
+}
+
+.location-address-user {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.share-change-address {
+    display: flex;
+    flex-direction: row;
     gap: 20px;
 }
 
-.contact-box-mod svg {
-    width: 32px;
-    height: 32px;
+.share-change-address p {
+    font-size: 24px;
     color: var(--green-color);
-    cursor: pointer;
 }
 
-.contact-box-mod svg:hover {
-    color: var(--footer-green-dark-color);
+.content-box-address-data {
+    display: flex;
+    flex-direction: column;
+    min-height: 38.25rem;
+    border: 0.5px ridge #D0D0D0;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 25px;
+    font-family: var(--source-sans-pro);
+    width: 78.813rem;
 }
 
+.coloring:active {
+    background-color: #DCFAD1;
+    border: 2px ridge #6BFF4F;
+}
+
+.share-change-address p:hover {
+    color: #54754e;
+}
 
 #overlay-effect {
     position: fixed;
@@ -177,7 +201,7 @@
 
 .title-bar p {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .form-for-address {
@@ -193,7 +217,7 @@
 
 .per-text-input p {
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .per-text-input input {
@@ -233,15 +257,4 @@
     height: 45px;
     background-color: var(--green-color);
     border: none;
-}
-
-.input-radio-button {
-    display: flex;
-    gap: 40px;
-}
-
-.input-1,
-.input-2 {
-    display: flex;
-    gap: 20px;
 }

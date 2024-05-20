@@ -1,7 +1,7 @@
 @import url(../CSS/Public.css);
 
+
 .container-for-transaction-page {
-    font-family: "Raleway", sans-serif;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -40,4 +40,111 @@
     border: 0.5px ridge #D0D0D0;
     border-radius: 0 0 20px 20px;
     width: 78.875rem;
+    align-items: center;
+    padding: 30px;
+    gap: 2.563rem;
+    font-family: var(--source-sans-pro);
+}
+
+.content-for-transactions-page {
+    box-shadow: 1px 0px 2px 1px rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 73.938rem;
+    height: 19.938rem;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+.left-right-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.mid-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-content {
+    text-align: end;
+}
+
+.mid-text-content p3 {
+    font-size: 34px;
+    font-weight: 400;
+
+}
+
+.price-tag-items {
+    font-size: 21px;
+}
+
+.right-content p2 {
+    font-size: 32px;
+    font-weight: 600;
+
+}
+
+.right-content p {
+    font-size: 21px;
+
+}
+
+.price-tag-items {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.dot {
+    height: 4px;
+    width: 4px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.top-text-date {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.top-text-date p1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.top-text-date p {
+    font-size: 24px;
+}
+
+.button-bot-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-bot-content a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--pure-light);
+    background-color: var(--green-color);
+    width: 194px;
+    height: 47px;
+    border: none;
+    border-radius: 18px;
+    text-decoration: none;
+    font-size: 21px;
 }

@@ -10,13 +10,13 @@
     </head>
 
     <body>
-        @include('navbar')
+        @include('components/navbar')
         <div class="container-for-profile-page-main">
-            @include('sidebar')
+            @include('components/sidebar')
             <div class="content-for-profile-page">
             </div>
         </div>
-        @include('footer')
+        @include('components/footer')
     </body>
 
 </html>

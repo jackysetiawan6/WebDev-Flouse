@@ -20,9 +20,9 @@
                     <label class="input-label name">Full Name (Optional)</label>
                 </div>
                 <div class="input-box email">
-                    <input required="" type="text" class="input-text email">
+                    <input required="" type="text" class="input-text email" id="email-text">
                     <label class="input-label email">Email</label>
-                    <p class="error-msg">Invalid email (example: yourname@email.com)</p>
+                    <p class="error-msg" id="email-error">Invalid email (example: yourname@email.com)</p>
                 </div>
                 <div class="input-box outer">
                     <div class="input-box pass">
@@ -31,17 +31,17 @@
                         <label class="input-label pass">Password</label>
                     </div>
                     <div>
-                        <p class="error-msg">Must consist of minumum 8 alphanum</p>
+                        <p class="error-msg" id="pass-error">Must consist of minumum 8 alphanum</p>
                     </div>
                 </div>
                 <div class="input-box re-pass">
-                    <input required="" type="password"" class="input-text re-pass">
+                    <input required="" type="password" class="input-text re-pass" id="re-pass-text">
                     <label class="input-label re-pass">Re-enter Password</label>
-                    <p class="error-msg">Passwords do not match</p>
+                    <p class="error-msg" id="re-pass-error">Passwords do not match</p>
                 </div>
             </div>
             <div class="submit">
-                <a href="/"><button class="submit-button">Explore Now</button></a>
+                <a href="/"><button class="submit-button" id="submit-btn">Explore Now</button></a>
             </div>
             <div class="continue-with">
                 <p class="continue-text">or continue with</p>
@@ -75,5 +75,6 @@
         <p class="copyright">© 2024 Flouse</p>
     </div>
     <script src="../JS/Auth/ShowHidePass.js"></script>
+    <!-- <script src="../JS/Auth/ErrorMessage.js"></script> -->
 </body>
 </html>

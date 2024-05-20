@@ -25,3 +25,7 @@
     --text-medium: 1.5rem;
     --text-small: 1rem;
 }
+
+footer {
+    font-family: var(--raleway);
+}
