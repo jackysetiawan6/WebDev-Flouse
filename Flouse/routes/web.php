@@ -67,6 +67,14 @@ Route::get('/help/payment', function () {
     return view('Help/Payment');
 });
 
+Route::get('/help/howtoorder', function () {
+    return view('Help/HowToOrder');
+});
+
+Route::get('/help/contactus', function () {
+    return view('Help/ContactUs');
+});
+
 Route::get('/forum', function () {
     return view('Forum');
 })->name('forum');

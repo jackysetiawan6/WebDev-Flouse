@@ -38,9 +38,3 @@
     transition: all ease .3s;
     color: var(--pure-light);
 }
-
-.select{
-    background-color: var(--green-color);
-    border-radius: 10px;
-    color: var(--pure-light);
-}
