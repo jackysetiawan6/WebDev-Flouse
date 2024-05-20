@@ -15,12 +15,12 @@
         <h2 class="about">HELP</h2>
         <hr class="line1">
         <div class="top2">
-            <a href="" class="apa">Contact Us</a>
-            <a href="" class="apa">How to Order</a>
-            <a href="" class="apa">Plant Care Tips</a>
-            <a href="" class="apa select">Payment</a>
-            <a href="" class="apa">Shipping</a>
-            <a href="" class="apa">FAQ</a>
+            <a href="" class="apa contact">Contact Us</a>
+            <a href="" class="apa order">How to Order</a>
+            <a href="" class="apa plant">Plant Care Tips</a>
+            <a href="" class="apa payment">Payment</a>
+            <a href="" class="apa shipping">Shipping</a>
+            <a href="" class="apa faq">FAQ</a>
         </div>
     </div>
 </div>
