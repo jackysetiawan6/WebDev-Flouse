@@ -18,6 +18,11 @@ Route::get('/transaction', function () {
     return view('transactions');
 });
 
+Route::get('/transaction/nan', function () {
+    return view('nan');
+});
+
+
 Route::get('/address', function () {
     return view('address');
 });
