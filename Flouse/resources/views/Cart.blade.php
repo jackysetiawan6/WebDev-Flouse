@@ -105,6 +105,30 @@
                 </div>
                 <div class="order-summary">
                     <h1 class="summary-title">Order Summary</h1>
+                    <hr class="separate-line">
+                    <div class="count-total">
+                        <span class="subtotal-item">
+                            <p class="subtotal-text">Subtotal</p>
+                            <p class="subtotal-price">IDR 1,235,000</p>
+                        </span>
+                        <span class="subtotal-item">
+                            <p class="shipping-text">Shipping</p>
+                            <p class="shipping-price">FREE</p>
+                        </span>
+                        <hr class="separate-line">
+                        <div>
+                            <span class="total-part">
+                                <h2 class="total-text">Total</h2>
+                                <h2 class="total-price">IDR 1,235,000</h1>
+                            </span>
+                            <span>
+                                <p>Includes duties and taxes</p>
+                            </span>
+                        </div>
+                    </div>
+                    <span>
+                        <button class="continue-checkout">Continue to Checkout</button>
+                    </span>
                 </div>
             </div>
         </div>

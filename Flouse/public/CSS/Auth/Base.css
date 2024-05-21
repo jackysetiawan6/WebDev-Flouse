@@ -100,7 +100,7 @@ body {
 }
 
 .submit-button:hover {
-    background-color: #648E5C;
+    background-color: var(--hovered-button);
     transition: all ease-in-out 0.2s;
 }
 
