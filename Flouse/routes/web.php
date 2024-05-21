@@ -95,3 +95,11 @@ Route::get('/help/faq', function () {
 Route::get('/forum', function () {
     return view('Forum');
 })->name('forum');
+
+Route::get('/detail', function () {
+    return view('ProductDetail');
+});
+
+Route::get('/cart', function () {
+    return view('Cart');
+});
