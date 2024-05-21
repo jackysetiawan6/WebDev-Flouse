@@ -137,10 +137,6 @@ body {
     transition: all ease-in-out 0.2s;
 }
 
-.show-notes {
-    width: 1rem;
-}
-
 .second-part {
     align-items: end;
     justify-content: center;
@@ -163,8 +159,15 @@ body {
     justify-content: space-evenly;
 }
 
-.trash-icon {
-    width: 1rem;
+.icons {
+    width: 1.5rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.icons:hover {
+    fill: var(--hovered-text);
+    transition: all ease-in-out 0.2s;
 }
 
 .subtotal {
