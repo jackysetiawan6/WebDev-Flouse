@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Public.css">
     <link rel="stylesheet" href="../CSS/Help/ContactUs.css">
-    <title>Document</title>
+    <title>Contact Us | Flouse</title>
 </head>
 <body>
     @include("Components/Navbar")

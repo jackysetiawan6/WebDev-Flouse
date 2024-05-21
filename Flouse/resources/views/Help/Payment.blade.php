@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Public.css">
     <link rel="stylesheet" href="../CSS/Help/Payment.css">
-    <title>Document</title>
+    <title>Payment | Flouse</title>
 </head>
 <body>
     @include("Components/Navbar")
