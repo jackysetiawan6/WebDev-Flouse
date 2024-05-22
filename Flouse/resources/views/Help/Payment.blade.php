@@ -5,37 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Public.css">
     <link rel="stylesheet" href="../CSS/Help/Payment.css">
-    <title>Document</title>
+    <title>Payment | Flouse</title>
 </head>
 <body>
     @include("Components/Navbar")
     <div class="page">
         @include("Components/SideAbout")
-        <!-- <div class="left">
-            <div class="top">
-                <h2 class="about">ABOUT FLOUSE</h2>
-                <hr class="line1">
-                <div class="top2">
-                    <a href="" class="apa">About Us</a>
-                    <a href="" class="apa">Store Location</a>
-                    <a href="" class="apa">Privacy Policy</a>
-                    <a href="" class="apa">Cookie Policy</a>
-                    <a href="" class="apa">Terms and Condition</a>
-                </div>
-            </div>
-            <div class="top">
-                <h2 class="about">HELP</h2>
-                <hr class="line1">
-                <div class="top2">
-                    <a href="" class="apa">Contact Us</a>
-                    <a href="" class="apa">How to Order</a>
-                    <a href="" class="apa">Plant Care Tips</a>
-                    <a href="" class="apa select">Payment</a>
-                    <a href="" class="apa">Shipping</a>
-                    <a href="" class="apa">FAQ</a>
-                </div>
-            </div>
-        </div> -->
         <div class="right">
             <h2 class="right2">Payment</h2>
             <div class="apa2">Secure and Convenient Payment Options at Flouse</div>

@@ -37,12 +37,12 @@ body {
     margin-left: 30px;
 }
 
-.payment{
+.order {
     background-color: var(--green-color);
     border-radius: 10px;
     color: var(--pure-light);
 }
 
-.top2 .payment {
+.top2 .order {
     color: var(--pure-light);
 }

@@ -37,12 +37,12 @@ body {
     margin-left: 30px;
 }
 
-.payment{
+.contact{
     background-color: var(--green-color);
     border-radius: 10px;
     color: var(--pure-light);
 }
 
-.top2 .payment {
+.top2 .contact {
     color: var(--pure-light);
 }
