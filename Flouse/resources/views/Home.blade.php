@@ -5,20 +5,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="../CSS/Public.css">
-        <link rel="stylesheet" href="../CSS/Home.css">
+        <link rel="stylesheet" href="{{ asset('CSS/Public.css') }}">
+        <link rel="stylesheet" href="{{ asset('CSS/Home.css') }}">
         <title>Flouse</title>
     </head>
 
     <body>
         <div class="container-home">
-            @include('components/navbar')
+            @include('Components.Navbar')
             <div class="landing-page-01">
                 <div class="landing-page-01-left">
-                    <img src="../image/LandingPage01.svg" alt="" class="landingpage01-mod">
+                    <img src="{{ asset('Image/LandingPage01.svg') }}" alt="" class="landingpage01-mod">
                 </div>
                 <div class="landing-page-01-right">
-                    <img src="../image/FlowerHomePage.svg" alt="" class="image-flower-home-mod">
+                    <img src="{{ asset('Image/FlowerHomePage.svg') }}" alt="" class="image-flower-home-mod">
                     <div class="page-01-title-sub-button">
                         <div class="page-01-title">
                             Hydrangea Macrophylla
@@ -35,7 +35,7 @@
             </div>
             <div class="landing-page-02">
                 <div class="landing-page-02-banner-01">
-                    <img src="../image/sample1.svg" alt="" width="885" height="379">
+                    <img src="{{ asset('Image/Sample1.svg') }}" alt="" width="885" height="379">
                     <div class="landing-page-02-part-01">
                         <div class="landing-page-02-title">House Plant / Verdent Villa</div>
                         <div class="landing-page-02-sub-title">Step into Verdent Villa, where lush houseplants transform every room into a green
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="landing-page-02-banner-02">
-                    <img src="../image/sample2.svg" alt="" width="885" height="379">
+                    <img src="{{ asset('Image/Sample2.svg') }}" alt="" width="885" height="379">
                     <div class="landing-page-02-part-02">
                         <div class="landing-page-02-title">Plants Care /
                             Flora Concierge</div>
@@ -59,15 +59,15 @@
                 <div class="image-and-banner-landing-page-03">
                     <div class="image-slide-landing-page-03">
                         <div class="slider-1 modder">
-                            <img src="../image/SampleBouq1.svg" alt="">
+                            <img src="{{ asset('Image/SampleBouq1.svg') }}" alt="">
                             <p>Mokara Orchid</p>
                         </div>
                         <div class="slider-2 modder">
-                            <img src="../image/SampleBouq2.svg" alt="">
+                            <img src="{{ asset('Image/SampleBouq2.svg') }}" alt="">
                             <p>Rose</p>
                         </div>
                         <div class="slider-3 modder">
-                            <img src="../image/SampleBouq3.svg" alt="">
+                            <img src="{{ asset('Image/SampleBouq3.svg') }}" alt="">
                             <p>Ranunculus</p>
                         </div>
                         <div class="icon-page-03">
@@ -92,8 +92,8 @@
                     <div>
                     </div>
                     <div class="image-still-landing-page-03">
-                        <img src="../image/SampleBoard02.svg" alt="">
-                        <img src="../image/SampleBoard01.svg" alt="">
+                        <img src="{{ asset('Image/SampleBoard01.svg') }}" alt="">
+                        <img src="{{ asset('Image/SampleBoard02.svg') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                         <div class="landing-page-02-explore-button"><button class="button-mod-for-landing left">Explore our latest</button></div>
                     </div>
                     <div class="landing-page-04-banner-02">
-                        <img src="../image/SampleArtificial02.svg" alt="">
+                        <img src="{{ asset('Image/SampleArtificial01.svg') }}" alt="">
                     </div>
                 </div>
                 <div class="landing-page-04-part-02">
@@ -118,11 +118,11 @@
                         </div>
                     </div>
                     <div class="landing-page-04-banner-02">
-                        <img src="../image/SampleArtificial01.svg" alt="">
+                        <img src="{{ asset('Image/SampleArtificial02.svg') }}" alt="">
                     </div>
                 </div>
             </div>
-            @include('components/Footer')
+            @include('Components.Footer')
     </body>
 
 </html>

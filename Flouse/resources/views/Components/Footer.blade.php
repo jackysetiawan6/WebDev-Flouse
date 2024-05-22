@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../CSS/Components/Footer.css">
+<link rel="stylesheet" href="{{ asset('CSS/Components/Footer.css') }}">
 
 <footer>
     <div class="footer-title-and-input">
@@ -111,30 +111,30 @@
                 <div class="title-for-footer">Payment Methods</div>
                 <ul>
                     <li>
-                        <img src="../image/americanexpresslogo.svg" alt="">
+                        <img src="{{ asset('Image/AmericanExpressLogo.svg') }}" alt="">
                     </li>
                     <li>
-                        <img src="../image/bcalogo.svg" alt="">
+                        <img src="{{ asset('Image/BCALogo.svg') }}" alt="">
                     </li>
                     <li>
-                        <img src="../image/brilogo.svg" alt="">
+                        <img src="{{ asset('Image/BRILogo.svg') }}" alt="">
                     </li>
                     <li>
-                        <img src="../image/gopaylogo.svg" alt="">
+                        <img src="{{ asset('Image/GopayLogo.svg') }}" alt="">
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <img src="../image/mandirilogo.svg" alt="">
+                        <img src="{{ asset('Image/MandiriLogo.svg') }}" alt="">
                     </li>
                     <li>
-                        <img src="../image/mastercardlogo.svg" alt="">
+                        <img src="{{ asset('Image/MastercardLogo.svg') }}" alt="">
                     </li>
                     <li>
-                        <img src="../image/ovologo.svg" alt="">
+                        <img src="{{ asset('Image/OVOLogo.svg') }}" alt="">
                     </li>
                     <li>
-                        <img src="../image/visa.svg" alt="">
+                        <img src="{{ asset('Image/Visa.svg') }}" alt="">
                     </li>
                 </ul>
             </div>

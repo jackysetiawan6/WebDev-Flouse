@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 :root {
     --background-default: #f8f9f1;
     --pure-black: #000000;

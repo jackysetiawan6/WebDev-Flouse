@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('css/Components/Navbar.css') }}">
+<link rel="stylesheet" href="{{ asset('CSS/Components/Navbar.css') }}">
 <div class="navbar-container">
     <ul class="navbar-part-1">
         <li>
