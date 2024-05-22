@@ -15,7 +15,7 @@
 }
 
 .main-banner {
-    height: 350px;
+    height: 300px;
     width: 100%;
     background-color: #ffe5f3;
     position: relative;
@@ -27,7 +27,7 @@
 }
 
 .banner-text {
-    margin-left: 70px;
+    margin-left: 50px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

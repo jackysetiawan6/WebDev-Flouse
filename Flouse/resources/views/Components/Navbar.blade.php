@@ -8,10 +8,10 @@
                 </svg></a>
         </li>
         <li>
-            <a href="">Shop</a>
+            <a href="{{ Route('store') }}">Store</a>
         </li>
         <li>
-            <a href="">Forum</a>
+            <a href="{{ Route('forum') }}">Forum</a>
         </li>
         <li>
             <a href="">About</a>

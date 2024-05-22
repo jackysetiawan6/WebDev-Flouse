@@ -11,7 +11,7 @@
 
     <body>
         <div class="container">
-            @include('components/Navbar')
+            @include('Components.Navbar')
             <div class="container-main">
                 <div class="main-banner">
                     <img class="banner-image" src="{{ asset('Image/Store/Banner.svg') }}" alt="Banner">
@@ -118,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            @include('components/Footer')
+            @include('Components.Footer')
         </div>
         <script src="../JS/Store.js"></script>
     </body>
