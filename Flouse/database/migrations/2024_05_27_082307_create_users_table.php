@@ -15,9 +15,13 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->rememberToken();
+            $table->date('date_of_birth')->nullable();
+            $table->enum('gender', ['Male', 'Female', 'Other'])->default('Other');
+            $table->string('phone_number')->unique();
+            $table->string('profile_image')->nullable();
+            $table->boolean('is_admin')->default(false);
+            $table->boolean('is_subscribed')->default(false);
             $table->timestamps();
         });
     }
