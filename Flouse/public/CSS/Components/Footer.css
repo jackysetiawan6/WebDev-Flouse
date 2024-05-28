@@ -44,14 +44,17 @@
     width: 121px;
     height: 60px;
     border-radius: 0 10px 10px 0;
-    background-image: linear-gradient(180deg, rgba(89, 126, 82, 1), rgba(79, 100, 76, 1));
+    background-image: linear-gradient(#78AD6E, #84A17F);
     color: var(--pure-light);
     font-size: 20px;
     font-weight: 200;
     cursor: pointer;
     border: 1px solid #B3B2B2;
+}
 
-
+.input-form button:hover {
+    background-image: linear-gradient(#84A17F, #78AD6E);
+    animation: 0.5s ease-in-out;
 }
 
 .footer-last-place,
@@ -90,6 +93,10 @@ hr {
     color: var(--pure-black);
     font-size: 24px;
     font-weight: 400;
+}
+
+.footer-information ul li a:hover {
+    color: var(--hovered-text);
 }
 
 .info-footer {

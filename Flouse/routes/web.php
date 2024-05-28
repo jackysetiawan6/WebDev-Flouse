@@ -6,28 +6,28 @@ Route::get('/', function () {
     return view('Home');
 });
 
-Route::get('/profile', function () {
-    return view('Profile');
-});
 
 Route::get('/about', function () {
     return view('about');
 });
-
-Route::get('/transaction', function () {
-    return view('transactions');
+Route::get('profile', function () {
+    return view('Profile/Profile');
 });
 
-Route::get('/transaction/nan', function () {
-    return view('nan');
+Route::get('transaction', function () {
+    return view('Profile/transactions');
 });
 
-Route::get('/address', function () {
-    return view('address');
+Route::get('transaction/nan', function () {
+    return view('Profile/nan');
 });
 
-Route::get('/payment', function () {
-    return view('payment');
+Route::get('address', function () {
+    return view('Profile/address');
+});
+
+Route::get('payment', function () {
+    return view('Profile/payment');
 });
 
 Route::get('/navbar', function () {
