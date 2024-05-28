@@ -99,10 +99,6 @@
             </div>
     
             <div class="right-side">
-                <div class="promo-code">
-                    <input placeholder="Enter promo code" type="text" name="enter-code" id="">
-                    <button class="apply-btn">Apply</button>
-                </div>
                 <div class="order-summary">
                     <h1 class="summary-title">Order Summary</h1>
                     <hr class="separate-line">

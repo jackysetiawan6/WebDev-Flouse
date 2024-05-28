@@ -24,6 +24,17 @@ return new class extends Migration
             $table->boolean('is_subscribed')->default(false);
             $table->timestamps();
         });
+
+        Schema::create('addresses', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id')->constrained('users')->references('id')->on('users');
+            $table->boolean('is_main');
+            $table->string('email')->unique();
+            $table->string('address_label');
+            $table->string('address_full');
+            $table->string('address_notes')->nullable();
+            $table->string('address_phone');
+        });
     }
 
     /**

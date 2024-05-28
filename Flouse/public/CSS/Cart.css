@@ -184,44 +184,8 @@ body {
     padding: 3rem 0;
 }
 
-.promo-code {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.promo-code input {
-    font-size: 18px;
-    width: 25rem;
-    padding: 1rem;
-    border-radius: 10px 0 0 10px;
-    border: 1px solid var(--stroke-color);
-}
-
-.promo-code input::placeholder {
-    font-size: 18px;
-}
-
-.apply-btn {
-    font-weight: 200;
-    background-image: linear-gradient(#78AD6E, #84A17F);
-    color: var(--background-default);
-    font-size: 18px;
-    padding: 1rem;
-    border-radius: 0 10px 10px 0;
-    border: none;
-    cursor: pointer;
-    transition: all ease-in-out 0.2s;
-}
-
-.apply-btn:hover {
-    background-image: linear-gradient(#84A17F, #78AD6E);
-    transition: all ease-in-out 0.2s;
-}
-
 .order-summary {
+    width: 35rem;
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
