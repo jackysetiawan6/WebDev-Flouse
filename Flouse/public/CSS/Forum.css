@@ -2,6 +2,10 @@
     display: none;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 ol,
 ul,
 li {
@@ -9,8 +13,13 @@ li {
     margin: 0;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
     background-color: var(--background-default);
     user-select: none;
@@ -25,5 +34,361 @@ li {
     margin-top: 80px;
     display: flex;
     padding: 50px 5vw;
+    gap: 50px;
+}
+
+.main-left {
+    height: 100%;
+    width: calc(100% - 450px);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main-left-top {
+    height: fit-content;
+    width: 100%;
+    display: flex;
     gap: 25px;
+}
+
+.main-left-bottom {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.top-left {
+    height: fit-content;
+    width: 100px;
+}
+
+.left-profile {
+    background: url(../Image/Sample1.svg);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.top-right {
+    height: fit-content;
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-input {
+    height: 60px;
+    width: 100%;
+    background-color: var(--background-default);
+}
+
+.right-input textarea {
+    appearance: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    border: none;
+    resize: none;
+    font-family: var(--source-sans-pro);
+    font-size: var(--text-small);
+}
+
+.right-input textarea:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.right-tags {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag-item {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px 2px 15px;
+    gap: 5px;
+    border: 1px solid var(--stroke-color);
+    border-radius: 25px;
+}
+
+.tag-item p {
+    font-family: var(--source-sans-pro);
+    font-size: var(--text-small);
+    font-weight: 600;
+}
+
+.tag-item .bi {
+    cursor: pointer;
+    font-size: var(--text-large);
+    color: var(--stroke-color);
+}
+
+.tag-item .bi::before {
+    display: flex;
+}
+
+.tag-item .bi:hover {
+    color: var(--pure-black);
+}
+
+.right-separator {
+    height: 1px;
+    width: 100%;
+    background-color: var(--stroke-color);
+}
+
+.right-tool {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tool-left {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    gap: 40px;
+}
+
+.tool-left-item {
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    place-items: center;
+}
+
+.tool-left-item img {
+    height: 25px;
+    width: 25px;
+    object-fit: contain;
+    object-position: center;
+    cursor: pointer;
+}
+
+.tool-right {
+    height: 40px;
+    width: 120px;
+    display: grid;
+    place-items: center;
+    border: none;
+    outline: none;
+    background-color: var(--green-color);
+}
+
+.tool-right:hover, .tool-right:active {
+    background-color: var(--green-color);
+    filter: brightness(1.2);
+}
+
+/* ################################################## START STYLE FOR COMMENTS ################################################## */
+
+.comment {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    border: 1px solid var(--stroke-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.comment-profile {
+    background: url(../Image/Sample2.svg);
+    background-size: cover;
+    background-position: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.comment-right {
+    height: fit-content;
+    width: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-name {
+    font-family: var(--source-sans-pro);
+    font-size: var(--text-small);
+    font-weight: bold;
+    color: #9e9e9e;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.name-dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: var(--pure-black);
+}
+
+.comment-context {
+    font-family: var(--source-sans-pro);
+    font-size: var(--text-small);
+    color: var(--pure-black);
+}
+
+.context-extend {
+    color: var(--green-color);
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.context-extend:hover {
+    color: var(--pure-black);
+}
+
+.comment-tags {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: var(--green-color);
+    font-weight: bold;
+}
+
+.comment-tools {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.comment-tool {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment-tool p {
+    font-family: var(--source-sans-pro);
+    font-size: var(--text-small);
+    color: var(--pure-black);
+}
+
+/* ################################################## END STYLE FOR COMMENTS ################################################## */
+
+.main-right {
+    position: sticky;
+    top: 130px;
+    height: fit-content;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-group {
+    position: relative;
+    background-color: #d9d9d9;
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+#basic-addon1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;;
+    border: none;
+    border-radius: 0;
+}
+
+#search-input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-radius: 25px;
+    margin: 0;
+    padding-left: 50px;
+    font-family: var(--source-sans-pro);
+    font-size: var(--text-small);
+}
+
+#search-input:active,
+#search-input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.trending {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid #d9d9d9;
+}
+
+.trending-title {
+    font-family: var(--source-sans-pro);
+    font-size: var(--text-medium);
+    font-weight: bold;
+}
+
+.trending-item {
+    position: relative;
+}
+
+.trending-item a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-family: var(--source-sans-pro);
+    font-size: var(--text-small);
+    color: var(--green-color);
+    text-decoration: none;
+}
+
+.trending-item a:hover {
+    color: var(--pure-black);
+}
+
+.item-name {
+    font-family: var(--source-sans-pro);
+    font-size: var(--text-small);
+    font-weight: bold;
+}
+
+.item-count {
+    font-family: var(--source-sans-pro);
+    font-size: var(--text-small);
+    color: #7A757D;
 }
