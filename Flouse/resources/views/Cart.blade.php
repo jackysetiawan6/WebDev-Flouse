@@ -17,6 +17,88 @@
             <p class="continue-shopping">Not ready to checkout? <a href="/store">Continue Shopping</a></p>
         </div>
         <div class="page-content">
+            <div class="popup-detail" id="popupDetail">
+                <div class="popup-content">
+                    <svg class="close-button" onclick="toggleDetailPopup()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+                    <h2 class="popup-title">Checkout Detail</h2>
+                    <div class="delivery-section">
+                        <h3 class="section-title">Delivery</h3>
+                        <span class="delivery date">
+                            <div class="label">
+                                <p>Date</p>
+                            </div>
+                            <div class="value">
+                                <p>27 May 2024</p>
+                            </div>
+                        </span>
+                        <span class="delivery time">
+                            <div class="label">
+                                    <p>Time</p>
+                            </div>
+                            <div class="value">
+                                <p>14:00 - 16:00</p>
+                            </div>
+                        </span>
+                        <span class="delivery city">
+                            <div class="label">
+                                <p>City</p>
+                            </div>
+                            <div class="value">
+                                <p>Jakarta</p>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="receiver-section">
+                        <h3 class="section-title">Receiver</h3>
+                        <span class="receiver name">
+                            <div class="label">
+                                <p>Name</p>
+                            </div>
+                            <div class="value">
+                                <p>Karina Tirtayasa</p>
+                            </div>
+                        </span>
+                        <span class="receiver phone">
+                            <div class="label">
+                                <p>Phone Number</p>
+                            </div>
+                            <div class="value">
+                                <p>6282392839192</p>
+                            </div>
+                        </span>
+                        <span class="receiver address">
+                            <div class="label">
+                                <p>Address</p>
+                            </div>
+                            <div class="value">
+                                <p>Jl. Pakuan No.3, Sumur Batu, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat</p>
+                            </div>
+                        </span>
+                        <span class="receiver postal">
+                            <div class="label">
+                                <p>Postal Code</p>
+                            </div>
+                            <div class="value">
+                                <p>16810</p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-notes" id="popupNotes">
+                <div class="popup-content">
+                    <svg class="close-button" onclick="toggleNotesPopup()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+                    <h2 class="popup-title">Notes</h2>
+                    <p class="notes-description">Leave notes for the delivery service</p>
+                    <div class="input-section">
+                        <input type="text" class="input-box" placeholder="Type here">
+                    </div>
+                    <button class="save-btn" onclick="toggleNotesPopup()">Save</button>
+                </div>
+
+            </div>
+
             <div class="left-side">
                 <div class="cart-items">
                     <label class="cbox-select-product">
@@ -26,8 +108,8 @@
                     <img class="product-thumb" src="Image/ProductDetail/imageMain.png" alt="">
                     <div class="first-part">
                         <h2 class="product-name">Aurora Bouquet</h2>
-                        <button class="detail-btn">Detail</button>
-                        <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H288V352c0-17.7 14.3-32 32-32h80V96c0-8.8-7.2-16-16-16H64zM288 480H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V320v5.5c0 17-6.7 33.3-18.7 45.3l-90.5 90.5c-12 12-28.3 18.7-45.3 18.7H288z"/></svg>
+                        <button class="detail-btn" onclick="toggleDetailPopup()">Detail</button>
+                        <svg class="icons" onclick="toggleNotesPopup()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H288V352c0-17.7 14.3-32 32-32h80V96c0-8.8-7.2-16-16-16H64zM288 480H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V320v5.5c0 17-6.7 33.3-18.7 45.3l-90.5 90.5c-12 12-28.3 18.7-45.3 18.7H288z"/></svg>
                     </div>
                     <div class="second-part">
                         <p class="ori-price">IDR 545,000</p>
@@ -127,9 +209,11 @@
                     </span>
                 </div>
             </div>
+            
         </div>
     </div>
 
     @include('components/footer')
+    <script src="../JS/Cart.js"></script>
 </body>
 </html>
