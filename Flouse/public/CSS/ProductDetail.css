@@ -9,6 +9,66 @@ body {
     gap: 2vw;
 }
 
+.popup-addcart {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup-content {
+    position: absolute;
+    top: calc(50% + 40px);
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: var(--background-default);
+    border-radius: 10px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.123);
+    transition: all 0.3s ease-in-out;
+}
+
+.popup-title {
+    font-size: calc(var(--text-large)*1.2);
+    margin-bottom: 2vh;
+}
+
+.popup-addcart.active{
+    display: block;
+}
+
+.popup-addcart.active .popup-content {
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.checklist {
+    width: 6vw;
+    /* margin-top: -50%; */
+}
+
+.continue-btn {
+    background-color: var(--green-color);
+    width: 16vw;
+    padding: 0.75rem;
+    border: none;
+    color: var(--background-default);
+    border-radius: 10px;
+    font-size: var(--text-medium);
+}
+
+.continue-btn:hover {
+    background-color: var(--hovered-button);
+}
+
 .images-list {
     display: flex;
     flex-direction: column;
@@ -97,14 +157,15 @@ body {
 }
 
 .buy-now {
-    border: 3px solid var(--green-color);
-    color: var(--green-color);
-    background-color: var(--background-default);
+    border: 2px solid var(--hovered-text);
+    color: var(--background-default);
+    background-color: var(--hovered-text);
     cursor: pointer;
 }
 
 .buy-now:hover {
-    background-color: #C6E1C7;
+    background-color: #424242;
+    border: 2px solid #424242;
     transition: all ease-in-out 0.2s;
 }
 

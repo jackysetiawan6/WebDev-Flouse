@@ -1,3 +1,5 @@
+let popupAddCart = document.getElementById("popupAddCart");
+
 document.addEventListener('DOMContentLoaded', function() {
     const rating = 4.7;
     const starPercentage = (rating / 5) * 100;
@@ -5,3 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.querySelector('.stars-inner').style.width = starPercentageRounded;
 });
+
+function toggleCartPopup() {
+    popupAddCart.classList.toggle("active");
+}

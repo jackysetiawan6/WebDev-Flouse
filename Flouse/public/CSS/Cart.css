@@ -290,13 +290,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background-color: var(--background-default);
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 3rem;
-    transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     gap: 2vh;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.123);
+    transition: all 0.3s ease-in-out;
 }
 
 .popup-title {
@@ -368,7 +368,7 @@ body {
 }
   
 .input-box:focus {
-    box-shadow: 0 0 0 .15vw var(--green-color);
+    box-shadow: 0 0 0 3px var(--green-color);
 }
 
 .save-btn {

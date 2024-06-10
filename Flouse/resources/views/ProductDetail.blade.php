@@ -14,6 +14,13 @@
     @include('components/navbar')
 
     <div class="main-container">
+        <div class="popup-addcart" id="popupAddCart">
+            <div class="popup-content">
+                <svg class="checklist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#73a16a" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                <h2 class="popup-title">Added to Basket</h2>
+                <button class="continue-btn" onclick="toggleCartPopup()">Continue</button>
+            </div>
+        </div>
         <div class="images-list">
             <img class="img-list 1" src="Image/ProductDetail/image1.png" alt="display1">
             <img class="img-list 2" src="Image/ProductDetail/image2.png" alt="display2">
@@ -53,7 +60,7 @@
                 </ul>
             </div>
             <div class="button-section">
-                <a href=""><button class="add-cart">Add to Cart</button></a>
+                <a onclick="toggleCartPopup()"><button class="add-cart">Add to Cart</button></a>
                 <a href=""><button class="buy-now">Buy Now</button></a>
             </div>
         </div>
