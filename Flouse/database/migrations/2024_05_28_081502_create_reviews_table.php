@@ -12,9 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('reviews', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('product_id')->constrained('products')->references('id')->on('products');
-            $table->foreignId('user_id')->constrained('users')->references('id')->on('users');
+            $table->id('review_id');
+            $table->unsignedBigInteger('product_id');
+            $table->unsignedBigInteger('user_id');
             $table->float('overall_rating');
             $table->float('appearance');
             $table->float('fragrance');
@@ -22,6 +22,9 @@ return new class extends Migration
             $table->float('value');
             $table->string('review_text')->nullable();
             $table->timestamps();
+
+            $table->foreign('product_id')->on('products')->references('product_id')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('user_id')->on('users')->references('user_id')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

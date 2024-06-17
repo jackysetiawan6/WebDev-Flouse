@@ -12,17 +12,22 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('customer_chats', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('user_id')->constrained('users')->references('id')->on('users');
-            $table->foreignId('cust_service_id')->constrained('users')->references('id')->on('users');
+            $table->id('room_id');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('cust_service_id');
             $table->timestamps();
+
+            $table->foreign('user_id')->on('users')->references('user_id')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('cust_service_id')->on('users')->references('user_id')->onDelete('cascade')->onUpdate('cascade');
         });
 
         Schema::create('chat_texts', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('room_id')->constrained('customer_chats')->references('id')->on('customer_chats');
+            $table->id('chat_id');
+            $table->unsignedBigInteger('room_id');
             $table->string('chat_text');
             $table->timestamps();
+
+            $table->foreign('room_id')->on('customer_chats')->references('room_id')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

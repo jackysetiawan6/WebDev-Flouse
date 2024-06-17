@@ -13,7 +13,9 @@ class CartController extends Controller
      */
     public function index()
     {
-        //
+        $products = Cart::all();
+        // dd($carts);
+        return view('cart', ['products' => $products]);
     }
 
     /**

@@ -12,31 +12,41 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('forum_chats', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('user_id')->constrained('users')->references('id')->on('users');
+            $table->id('forum_id');
+            $table->unsignedBigInteger('user_id');
             $table->string('chat_text');
             $table->timestamps();
+
+            $table->foreign('user_id')->on('users')->references('user_id')->onDelete('cascade')->onUpdate('cascade');
         });
 
         Schema::create('likes', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('user_id')->constrained('users')->references('id')->on('users');
-            $table->foreignId('forum_id')->constrained('forum_chats')->references('id')->on('forum_chats');
+            $table->id('like_id');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('forum_id');
             $table->timestamps();
+
+            $table->foreign('user_id')->on('users')->references('user_id')->onDelete('cascade')->onCascade('cascade');
+            $table->foreign('forum_id')->on('forum_chats')->references('forum_id')->onDelete('cascade')->onDelete('cascade');
         });
         
         Schema::create('tags', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('forum_id')->constrained('forum_chats')->references('id')->on('forum_chats');
+            $table->id('tag_id');
+            $table->unsignedBigInteger('forum_id');
             $table->string('tag_name');
+
+            $table->foreign('forum_id')->on('forum_chats')->references('forum_id')->onDelete('cascade')->onUpdate('cascade');
         });
 
         Schema::create('chat_replies', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('forum_id')->constrained('forum_chats')->references('id')->on('forum_chats');
-            $table->foreignId('user_id')->constrained('users')->references('id')->on('users');
+            $table->id('reply_id');
+            $table->unsignedBigInteger('forum_id');
+            $table->unsignedBigInteger('user_id');
             $table->string('reply_text');
             $table->timestamps();
+
+            $table->foreign('forum_id')->on('forum_chats')->references('forum_id')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('user_id')->on('users')->references('user_id')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

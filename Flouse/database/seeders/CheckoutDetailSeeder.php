@@ -4,11 +4,11 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Faker\Factory as faker;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use Faker\Factory as Faker;
 
-class CartSeeder extends Seeder
+class CheckoutDetailSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,13 +17,16 @@ class CartSeeder extends Seeder
     {
         $faker = Faker::create('id_ID');
         for($i = 1; $i <= 10; $i++) {
-            DB::table('carts')->insert(
+            DB::table('checkout_details')->insert(
                 [
-                    'cart_id' => $faker->numberBetween(1, 3),
-                    'product_id' => $faker->numberBetween(1, 10),
                     'checkout_detail_id' => $faker->numberBetween(1, 3),
-                    'quantity' => $faker->numberBetween(10, 20),
-                    'notes' => $faker->text(16),
+                    'delivery_date' => $faker->dateTime()->format('d-m-Y H:i:s'),
+                    'delivery_time' => $faker->time(),
+                    'destination_city' => $faker->city(),
+                    'receiver_name' => $faker->name(),
+                    'receiver_phone_number' => $faker->numberBetween(100, 999),
+                    'address' => $faker->address(),
+                    'postal_code' => $faker->numberBetween(10000, 99999),
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now()
                 ]

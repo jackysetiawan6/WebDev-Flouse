@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('products', function (Blueprint $table) {
-            $table->id();
+            $table->id('product_id');
             $table->string('name');
             $table->float('original_price');
             $table->integer('discount')->default(0);
@@ -22,21 +22,29 @@ return new class extends Migration
         });
 
         Schema::create('product_images', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('product_id')->constrained('products')->references('id')->on('products');
+            $table->id('product_image_id');
+            $table->unsignedBigInteger('product_id');
             $table->string('image_url');
+
+            $table->foreign('product_id')->on('products')->references('product_id')->onDelete('cascade')->onUpdate('cascade');
         });
 
         Schema::create('product_colors', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('product_id')->constrained('products')->references('id')->on('products');
-            $table->foreignId('color_id')->constrained('colors')->references('id')->on('colors');
+            $table->id('product_color_id');
+            $table->unsignedBigInteger('product_id');
+            $table->unsignedBigInteger('color_id');
+
+            $table->foreign('product_id')->on('products')->references('product_id')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('color_id')->on('colors')->references('color_id')->onDelete('cascade')->onUpdate('cascade');
         });
 
         Schema::create('product_category', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('product_id')->constrained('products')->references('id')->on('products');
-            $table->foreignId('category_id')->constrained('categories')->references('id')->on('categories');
+            $table->id('product_category_id');
+            $table->unsignedBigInteger('product_id');
+            $table->unsignedBigInteger('category_id');
+
+            $table->foreign('product_id')->on('products')->references('product_id')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('category_id')->on('categories')->references('category_id')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

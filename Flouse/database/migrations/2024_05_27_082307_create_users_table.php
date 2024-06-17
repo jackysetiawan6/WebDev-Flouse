@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
+            $table->id('user_id');
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
@@ -26,14 +26,16 @@ return new class extends Migration
         });
 
         Schema::create('addresses', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('user_id')->constrained('users')->references('id')->on('users');
+            $table->id("address_id");
+            $table->unsignedBigInteger("user_id");
             $table->boolean('is_main');
             $table->string('email')->unique();
             $table->string('address_label');
             $table->string('address_full');
-            $table->string('address_notes')->nullable();
+            $table->string('address_notes');
             $table->string('address_phone');
+
+            $table->foreign('user_id')->on('users')->references('user_id')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
