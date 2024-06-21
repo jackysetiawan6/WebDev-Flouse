@@ -14,6 +14,6 @@ class Product extends Model
     protected $primaryKey = 'product_id';
 
     public function cart() {
-        return $this->belongsToMany(Cart::class, 'carts', 'cart_id', 'product_id');
+        return $this->belongsToMany(Cart::class, 'carts', 'product_id', 'cart_id');
     }
 }

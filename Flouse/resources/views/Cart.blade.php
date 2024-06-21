@@ -109,7 +109,7 @@
                         <img class="product-thumb" src="Image/ProductDetail/imageMain.png" alt="">
                         <div class="item-description">
                             <div>
-                                <h2 class="product-name">{{ $product->product[0]->name }}</h2>
+                                <h2 class="product-name">{{ $product->product->name }}</h2>
                             </div>
                             <div class="buy-info">
                                 <div class="first-part">

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cart;
+use App\Models\Product;
 use App\Http\Requests\StoreCartRequest;
 use App\Http\Requests\UpdateCartRequest;
 
@@ -13,8 +14,8 @@ class CartController extends Controller
      */
     public function index()
     {
-        $products = Cart::all();
-        // dd($carts);
+        $products = Cart::where('user_id', 2)->with('product')->get();
+        // dd($products);
         return view('cart', ['products' => $products]);
     }
 

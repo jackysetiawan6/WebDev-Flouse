@@ -19,8 +19,8 @@ class CheckoutDetailSeeder extends Seeder
         for($i = 1; $i <= 10; $i++) {
             DB::table('checkout_details')->insert(
                 [
-                    'checkout_detail_id' => $faker->numberBetween(1, 3),
-                    'delivery_date' => $faker->dateTime()->format('d-m-Y H:i:s'),
+                    'checkout_detail_id' => $i,
+                    'delivery_date' => $faker->dateTime()->format('Y-m-d H:i:s'),
                     'delivery_time' => $faker->time(),
                     'destination_city' => $faker->city(),
                     'receiver_name' => $faker->name(),

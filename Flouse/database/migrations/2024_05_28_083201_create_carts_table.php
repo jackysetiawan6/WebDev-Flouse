@@ -25,12 +25,14 @@ return new class extends Migration
         
         Schema::create('carts', function (Blueprint $table) {
             $table->id('cart_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('product_id');
             $table->unsignedBigInteger('checkout_detail_id');
             $table->integer('quantity');
             $table->string('notes')->nullable();
             $table->timestamps();
 
+            $table->foreign('user_id')->on('users')->references('user_id')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('product_id')->on('products')->references('product_id')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('checkout_detail_id')->on('checkout_details')->references('checkout_detail_id')->onDelete('cascade')->onUpdate('cascade');
         });

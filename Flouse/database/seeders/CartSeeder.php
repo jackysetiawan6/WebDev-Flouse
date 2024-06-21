@@ -19,9 +19,10 @@ class CartSeeder extends Seeder
         for($i = 1; $i <= 10; $i++) {
             DB::table('carts')->insert(
                 [
-                    'cart_id' => $faker->numberBetween(1, 3),
-                    'product_id' => $faker->numberBetween(1, 10),
-                    'checkout_detail_id' => $faker->numberBetween(1, 3),
+                    'cart_id' => $i,
+                    'user_id' => $faker->numberBetween(1, 5),
+                    'product_id' => $faker->unique()->numberBetween(1, 10),
+                    'checkout_detail_id' => $i,
                     'quantity' => $faker->numberBetween(10, 20),
                     'notes' => $faker->text(16),
                     'created_at' => Carbon::now(),
