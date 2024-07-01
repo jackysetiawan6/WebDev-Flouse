@@ -47,3 +47,105 @@
 .navbar-part-2 {
     justify-content: flex-end;
 }
+
+
+
+.icons {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+    color: var(--pure-black);
+}
+
+.icons:hover {
+    background-color: var(--stroke-color);
+}
+
+.search-section {
+    position: relative;
+    --size-button: 40px;
+    color: var(--pure-black);
+}
+
+.search-input {
+    padding-left: var(--size-button);
+    height: var(--size-button);
+    font-size: 15px;
+    border: none;
+    color: var(--pure-black);
+    outline: none;
+    width: var(--size-button);
+    transition: all ease 0.3s;
+    background-color: var(--background-default);
+    /* border: var(--stroke-color) solid 2px; */
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.search-input:hover {
+    background-color: var(--stroke-color);
+}
+
+.search-input:focus,
+.search-input:not(:invalid) {
+    width: 15vw;
+    cursor: text;
+    background-color: var(--stroke-color);
+}
+
+.search-input:focus + .search-icon,
+.search-input:not(:invalid) + .search-icon {
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.search-section .search-icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+}
+
+.search-section .search-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.auth-section {
+    display: flex;
+    gap: 1vw;
+}
+
+.login-btn,
+.register-btn {
+    width: 6vw;
+    height: 6vh;
+    border-radius: 10px;
+    font-size: var(--text-small);
+    cursor: pointer;
+}
+
+.login-btn {
+    border: var(--green-color) solid 2px;
+    color: var(--green-color);
+    transition: all ease .3s;
+}
+
+.login-btn:hover {
+    background-color: #cddecc;
+}
+
+.register-btn {
+    border: var(--green-color) solid 2 px;
+    color: var(--background-default);
+    background-color: var(--green-color);
+    transition: all ease .3s;
+}
+
+.register-btn:hover {
+    background-color: var(--hovered-button);
+}

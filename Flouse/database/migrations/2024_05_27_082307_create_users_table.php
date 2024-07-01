@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('password');
             $table->date('date_of_birth')->nullable();
             $table->enum('gender', ['Male', 'Female', 'Other'])->default('Other');
-            $table->string('phone_number')->unique();
+            $table->string('phone_number')->unique()->nullable();
             $table->string('profile_image')->nullable();
             $table->boolean('is_admin')->default(false);
             $table->boolean('is_subscribed')->default(false);
@@ -28,12 +28,12 @@ return new class extends Migration
         Schema::create('addresses', function (Blueprint $table) {
             $table->id("address_id");
             $table->unsignedBigInteger("user_id");
-            $table->boolean('is_main');
+            $table->boolean('is_main')->default(false);
             $table->string('email')->unique();
-            $table->string('address_label');
-            $table->string('address_full');
-            $table->string('address_notes');
-            $table->string('address_phone');
+            $table->string('address_label')->default('Not set');
+            $table->string('address_full')->default('Not set');
+            $table->string('address_notes')->default('Not set');
+            $table->string('address_phone')->default('Not set');
 
             $table->foreign('user_id')->on('users')->references('user_id')->onUpdate('cascade')->onDelete('cascade');
         });

@@ -12,16 +12,22 @@
 <body>
     <div class="container">
         <img src="../Image/FlouseText.svg" alt="logo" class="image-modifier-logo">
-        <div class="form">
+        <form class="form" method="post" action="/login">
+            @csrf
             <div class="main-form">
                 <h1 class="welcome-text">Welcome back</h1>
                 <div class="input-box email">
-                    <input required="" type="text" name="email-text" class="input-text email">
+                    <input required value="{{ old('email') }}" type="text" name="email" class="input-text email">
                     <label class="input-label email">Email</label>
                 </div>
+                @error('email')
+                    <div>
+                        <p class="error-msg">{{ $message }}</p>
+                    </div>
+                @enderror
             </div>
             <div class="submit">
-                <a href="/login/password"><button class="submit-button">Continue</button></a>
+                <button type="submit" class="submit-button">Continue</button>
             </div>
             <div class="continue-with">
                 <p class="continue-text">or continue with</p>
@@ -51,7 +57,7 @@
                     <a href="/register" class="linked-text">Create Account</a>
                 </p>
             </div>
-        </div>
+        </form>
         <p class="copyright">© 2024 Flouse</p>
     </div>
 </body>

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 
 Route::get('/', function () {
     return view('home');
@@ -10,7 +12,6 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return redirect('/');
 });
-
 
 Route::get('/about', function () {
     return view('about');
@@ -47,17 +48,23 @@ Route::get('/register', function () {
     return view('Auth/Register');
 });
 
-Route::get('/login', function () {
-    return view('Auth/LoginEmail');
+Route::prefix('/login')->group(function(){
+    Route::get('', [LoginController::class, 'index_email'])->middleware('guest');
+
+    Route::post('', [LoginController::class, 'auth_email']);
+
+    Route::get('/password', [LoginController::class, 'index_password'])->middleware(('guest'));
+
+    Route::post('/password', [LoginController::class, 'auth_password']);
 });
 
-Route::get('/login/password', function () {
-    return view('Auth/LoginPassword');
+Route::prefix('/register')->group(function(){
+    Route::get('/', [RegisterController::class, 'index']);
+
+    Route::post('/', [RegisterController::class, 'store']);
 });
 
-Route::get('/login/password-reset', function () {
-    return view('Auth/ResetPass');
-});
+Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::get('/store', function () {
     $categories = [

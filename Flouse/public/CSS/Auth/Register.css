@@ -7,10 +7,6 @@ body::-webkit-scrollbar {
     gap: 5vh;
 }
 
-.input-text.name {
-    margin-bottom: 2vh;
-}
-
 .input-box.pass {
     display: flex;
     justify-content: end;
@@ -58,14 +54,16 @@ body::-webkit-scrollbar {
     cursor: pointer;
     transition: all .3s ease;
 }
-  
+
 .logwith-button img {
     height: 35px;
     width: 35px;
 }
-  
+
 .logwith-button:hover {
     transform: scale(1.1);
     transition: all .3s ease;
     box-shadow: rgba(0, 0, 0, 0.24) 2px 2px 8px;
 }
+
+
